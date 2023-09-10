@@ -4,14 +4,14 @@
 
             <!-- <h1 class="logo me-auto"><a href="<?=BASEPATH?>">Digital Learning Career</a></h1> -->
             <!-- Uncomment below if you prefer to use an image logo -->
-            <a href="<?=BASEPATH?>" class="logo me-auto"><img src="<?=BASEPATH?>include/img/logoweb.png" alt="" class="img-fluid"></a>
+            <a href="<?=BASEPATH?>" class="logo me-auto"><img data-aos="fade-down" data-aos-delay="200" src="<?=BASEPATH?>include/img/logoweb.png" alt="" class="img-fluid"></a>
 
-            <nav id="navbar" class="navbar">
+            <nav id="navbar" class="navbar" data-aos="fade-down" data-aos-delay="200">
                 <ul>
-                    <li><a class="nav-link scrollto active" href="#hero">หน้าหลัก</a></li>
-                    <li><a class="nav-link scrollto" href="#about">เกี่ยวกับโครงการ</a></li>
-                    <li><a class="nav-link scrollto " target="_blank" href="https://lllskill.com/quiz/index.php">โปรแกรมแบบวัดแววความถนัดทางอาชีพ</a></li>
-                    <li class="dropdown"><a href="#services"><span>เรียนรู้อาชีพ</span> <i class="bi bi-chevron-down"></i></a>
+                    <li><a class="nav-link scrollto active" href="#hero"><i class='bx bx-home me-1' ></i> หน้าหลัก</a></li>
+                    <li><a class="nav-link scrollto" href="#about"><i class='bx bxs-school me-1' ></i> เกี่ยวกับโรงเรียน</a></li>
+                    <!-- <li><a class="nav-link scrollto " target="_blank" href="https://lllskill.com/quiz/index.php">โปรแกรมแบบวัดแววความถนัดทางอาชีพ</a></li> -->
+                    <!-- <li class="dropdown"><a href="#services"><span>เรียนรู้อาชีพ</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
                             <li><a href="#study_1">ท่องเที่ยวและการทำโฮมสเตย์</a></li>
                             <li><a href="#study_2">ล่องแก่ง</a></li>
@@ -27,12 +27,13 @@
                             <li><a href="#study_12">การขายออนไลน์</a></li>
                            
                         </ul>
-                    </li>
+                    </li> -->
 
 
 
                    
-                    <li><a class="nav-link scrollto" href="#team">คณะผู้วิจัย</a></li>
+                    <li><a class="nav-link scrollto" href="#team"><i class='bx bx-user me-1' ></i> ผู้บริหาร</a></li>
+                    <li><a class="nav-link scrollto" href="#login"><i class='bx bx-lock-alt me-1' ></i> เข้าสู่ระบบ</a></li>
                     <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
                             <li><a href="#">Drop Down 1</a></li>

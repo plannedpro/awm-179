@@ -13,12 +13,8 @@ $domain_ = $_SERVER['SERVER_NAME'];
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>โครงการ Digital Learning Career
-        การพัฒนาห้องเรียนดิจิทัลเปิดโลกกว้างสร้างเส้นทางเรียนรู้สู่อาชีพเพื่อส่งเสริมทักษะการมีงานทำของนักเรียนด้อยโอกาสในพื้นที่กื้ดช้าง
-        อำเภอแม่แตง จังหวัดเชียงใหม่</title>
-    <meta name="description" content="โครงการ Digital Learning Career
-        การพัฒนาห้องเรียนดิจิทัลเปิดโลกกว้างสร้างเส้นทางเรียนรู้สู่อาชีพเพื่อส่งเสริมทักษะการมีงานทำของนักเรียนด้อยโอกาสในพื้นที่กื้ดช้าง
-        อำเภอแม่แตง จังหวัดเชียงใหม่ - โดยสถาบันวิจัยและพัฒนา ม.ราชภัฏเชียงใหม่" />
+    <title>ระบบบันทึกข้อมูลการใช้บริการห้องสมุด โรงเรียนอนุบาลวังน้ำเย็นมิตรภาพที่ 179</title>
+    <meta name="description" content="ระบบบันทึกข้อมูลการใช้บริการห้องสมุด โรงเรียนอนุบาลวังน้ำเย็นมิตรภาพที่ 179 โดย Plannedpro Creative Solutions" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- facebook share -->
@@ -26,22 +22,14 @@ $domain_ = $_SERVER['SERVER_NAME'];
     <meta property="fb:app_id" content="">
     <meta property="fb:admins" content="">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Digital Learning Career
-        การพัฒนาห้องเรียนดิจิทัลเปิดโลกกว้างสร้างเส้นทางเรียนรู้สู่อาชีพเพื่อส่งเสริมทักษะการมีงานทำของนักเรียนด้อยโอกาสในพื้นที่กื้ดช้าง
-        อำเภอแม่แตง จังหวัดเชียงใหม่">
-    <meta property="og:description" content="โดยสถาบันวิจัยและพัฒนา ม.ราชภัฏเชียงใหม่ - โครงการวิจัย Digital Learning Career
-        การพัฒนาห้องเรียนดิจิทัลเปิดโลกกว้างสร้างเส้นทางเรียนรู้สู่อาชีพเพื่อส่งเสริมทักษะการมีงานทำของนักเรียนด้อยโอกาสในพื้นที่กื้ดช้าง
-        อำเภอแม่แตง จังหวัดเชียงใหม่">
+    <meta property="og:title" content="ระบบบันทึกข้อมูลการใช้บริการห้องสมุด โรงเรียนอนุบาลวังน้ำเย็นมิตรภาพที่ 179">
+    <meta property="og:description" content="ระบบบันทึกข้อมูลการใช้บริการห้องสมุด โรงเรียนอนุบาลวังน้ำเย็นมิตรภาพที่ 179">
     <meta property="og:image" content="https://<?=$domain_?>/facebbook1.png">
     <meta property="og:url" content="">
     <meta property="og:site_name" content="P">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Digital Learning Career
-        การพัฒนาห้องเรียนดิจิทัลเปิดโลกกว้างสร้างเส้นทางเรียนรู้สู่อาชีพเพื่อส่งเสริมทักษะการมีงานทำของนักเรียนด้อยโอกาสในพื้นที่กื้ดช้าง
-        อำเภอแม่แตง จังหวัดเชียงใหม่">
-    <meta name="twitter:description" content="โดยสถาบันวิจัยและพัฒนา ม.ราชภัฏเชียงใหม่ - โครงการวิจัย  Digital Learning Career
-        การพัฒนาห้องเรียนดิจิทัลเปิดโลกกว้างสร้างเส้นทางเรียนรู้สู่อาชีพเพื่อส่งเสริมทักษะการมีงานทำของนักเรียนด้อยโอกาสในพื้นที่กื้ดช้าง
-        อำเภอแม่แตง จังหวัดเชียงใหม่">
+    <meta name="twitter:title" content="ระบบบันทึกข้อมูลการใช้บริการห้องสมุด โรงเรียนอนุบาลวังน้ำเย็นมิตรภาพที่ 179">
+    <meta name="twitter:description" content="ระบบบันทึกข้อมูลการใช้บริการห้องสมุด โรงเรียนอนุบาลวังน้ำเย็นมิตรภาพที่ 179">
     <meta name="twitter:image" content="https://<?=$domain_?>/facebbook1.png">
     <meta property="fb:pages" content="" />
     <meta property="og:image:width" content="371">
@@ -123,24 +111,37 @@ $domain_ = $_SERVER['SERVER_NAME'];
 <body>
 
     <?php include('include/page/header.php'); ?>
-    <?php include('include/page/hearder_home.php'); ?>
+    <?php  ?>
   
     <?php 
+    include('include/page/hearder_home.php');
     include('include/page/about.php');
 
-    include('include/page/study_main.php');
-    include('include/page/section_all.php');
+    // include('include/page/study_main.php');
+    // include('include/page/section_all.php');
     
     // include('include/page/main.php'); 
-    
-    
     include('include/page/team.php');
+
+    Route::pathNotFound(function($path) {
+        // include('./include/page/error/404.php');
+        //  include('./include/page/home/NewBlogs.php'); 
+        echo 'Not found! '.$path;
+    });
+      
+    Route::methodNotAllowed(function($path, $method) {
+        echo 'Error 405 :-(<br>';
+        echo 'The requested path "'.$path.'" exists. But the request method "'.$method.'" is not allowed on this path!';
+    });
+    
     
     ?>
   
     <?php
     include('include/page/footer.php');
     ?>
+
+<?php Route::run(BASEPATH); ?>
     <div id="preloader"></div>
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
             class="bi bi-arrow-up-short"></i></a>
