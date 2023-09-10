@@ -1,0 +1,144 @@
+2023/09/03 21:18:41 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 21:19:39 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 21:23:47 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 21:24:31 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 21:30:35 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 21:30:55 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 21:33:02 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Mobile Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 21:34:05 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Mobile Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 21:34:52 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Mobile Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 21:40:58 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 21:46:19 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 21:47:52 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 21:47:57 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 21:48:22 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 21:48:55 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 21:49:13 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 21:49:35 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 22:02:37 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 22:03:24 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 22:08:54 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 22:11:30 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 22:13:09 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Mobile Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 22:13:47 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Mobile Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 22:15:39 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 22:16:27 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 22:40:06 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 22:43:28 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 22:44:57 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 22:45:40 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 22:45:59 =>Click Learn More (13) =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 22:51:35 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 22:52:00 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 22:53:16 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 22:54:13 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 22:54:17 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 22:56:43 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 22:57:42 =>Click Learn More (5) =>ip:::1 =>Browser:Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Mobile Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 22:57:54 =>View Video Clip (PongKwao) =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 22:57:59 =>Close Modal Video (PongKwao) =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 23:02:17 =>View Ebook (Maekampong) =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 23:02:46 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 23:02:55 =>Click Learn More (1) =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 23:02:57 =>Click Learn More (2) =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 23:02:58 =>Click Learn More (1) =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 23:03:34 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 23:05:22 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 23:10:14 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 23:15:00 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 23:15:47 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 23:16:38 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 23:18:05 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 23:20:27 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 23:21:08 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 23:21:44 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 23:27:44 =>View Ebook (1) =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 23:29:12 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 23:32:32 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 23:32:50 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 23:33:06 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 23:34:02 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 23:34:41 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 23:35:40 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 23:36:37 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 23:36:57 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 23:39:08 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 23:39:11 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 23:40:05 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 23:40:32 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 23:41:13 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 23:41:51 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 23:45:27 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 23:45:29 =>View Ebook (1) =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 23:45:33 =>View Video Clip (Maekampong) =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 23:45:38 =>Close Modal Video (Maekampong) =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 23:48:25 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 23:55:54 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 23:56:07 =>Click Learn More (2) =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 23:59:07 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/03 23:59:59 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 00:00:27 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 00:01:09 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 00:03:00 =>View Ebook (2) =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 00:03:02 =>View Ebook (2) =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 00:05:09 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 00:05:13 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 00:07:53 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 00:08:36 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 00:08:40 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 00:09:12 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 00:10:11 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 00:10:32 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 00:10:55 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 00:22:37 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 00:25:10 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 00:36:04 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 01:01:52 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 01:05:43 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 01:06:26 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 01:06:46 =>Click Learn More (12) =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 01:06:47 =>Click Learn More (13) =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 01:06:51 =>Click Learn More (9) =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 01:06:55 =>Click Learn More (12) =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 01:08:12 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 01:08:36 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 01:08:49 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 01:09:50 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 01:10:08 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 01:11:19 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 01:12:49 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 02:31:57 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 02:32:08 =>Click Learn More (5) =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 02:32:11 =>View Ebook (5) =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 02:32:31 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 02:32:36 =>View Ebook (5) =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 02:33:31 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 02:33:33 =>View Ebook (5) =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 02:34:26 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 02:41:42 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 02:41:44 =>Click Learn More (2) =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 02:41:47 =>View Video Clip (สุทัศนาผ้าฝ้าย บ้านป่าตาล) =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 02:41:51 =>Close Modal Video (undefined) =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 02:41:55 =>View Video Clip (ชันโรง เลี้ยงผึ้งโพรง) =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 02:41:58 =>Close Modal Video (undefined) =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 02:42:01 =>View Video Clip (บ้านไม้ด่างโฮมสเตย์) =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 02:42:03 =>Close Modal Video (undefined) =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 02:42:05 =>View Ebook (1) =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 02:43:01 =>View Ebook (2) =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 02:43:33 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 02:45:43 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 02:45:55 =>clickMenu About =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 02:48:12 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 02:48:48 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 02:49:30 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 02:49:44 =>Click Learn More (1) =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 02:52:48 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 02:53:38 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 02:55:45 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 02:56:25 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 02:56:27 =>clickMenu research team =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 02:56:33 =>clickMenu About =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 02:57:00 =>clickMenu About =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 02:57:23 =>View Ebook (13) =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 02:57:26 =>View Video Clip (การเลี้ยงไส้เดือน) =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|
+2023/09/04 02:57:28 =>Close Modal Video (undefined) =>ip:::1 =>Browser:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.42 |#|#|

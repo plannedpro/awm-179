@@ -1,0 +1,171 @@
+2023/03/12 11:30:02 => loadPage form ip : ::1 B:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69
+2023/03/12 11:31:46 => loadPage - ip : ::1 B:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69
+2023/03/12 11:31:48 => clickMenu About - ip : ::1 B:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69
+2023/03/12 11:31:51 => clickMenu About - ip : ::1 B:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69
+2023/03/12 11:39:22 => loadPage - ip : ::1 B:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69
+2023/03/12 11:39:28 => View Modal Detail (Maekampong) - ip : ::1 B:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69
+2023/03/12 11:39:32 => Close Modal (Maekampong) - ip : ::1 B:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69
+2023/03/12 11:43:36 => loadPage - ip : ::1 B:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69
+2023/03/12 11:43:54 => loadPage - ip : ::1 B:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69
+2023/03/12 11:43:58 => Click Website Plannedpro - ip : ::1 B:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69
+2023/03/12 11:44:06 => Click Tel. - ip : ::1 B:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69
+2023/03/12 11:44:07 => Click Email ird. - ip : ::1 B:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69
+2023/03/12 11:44:09 => Click Website ird. - ip : ::1 B:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69
+2023/03/12 11:44:09 => Click Address ird. - ip : ::1 B:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69
+2023/03/12 11:45:23 => loadPage - ip : ::1 B:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69
+2023/03/12 11:45:27 => Click Box Research team #2 อาจารย์วรพล วัฒนเหลืองอรุณ - ip : ::1 B:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69
+2023/03/12 11:45:29 => Click Box Research team #2 อาจารย์วรพล วัฒนเหลืองอรุณ - ip : ::1 B:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69
+2023/03/12 11:46:00 => click DowloadApp - ip : ::1 B:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69
+2023/03/12 11:46:04 => clickMenu About - ip : ::1 B:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69
+2023/03/12 11:46:05 => clickMenu MeaKampong - ip : ::1 B:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69
+2023/03/12 11:46:06 => clickMenu PongKwao - ip : ::1 B:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69
+2023/03/12 11:46:07 => clickMenu PaTan - ip : ::1 B:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69
+2023/03/12 11:46:08 => clickMenu research team - ip : ::1 B:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69
+2023/03/12 11:46:12 => View Modal Detail (Patan) - ip : ::1 B:Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36 Edg/110.0.1587.69
+2023/03/12 11:47:02 => loadPage - ip : ::1 B:Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36 Edg/110.0.1587.69
+2023/03/12 11:47:06 => clickMenu PaTan - ip : ::1 B:Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36 Edg/110.0.1587.69
+2023/03/12 11:47:08 => View Modal Detail (Patan) - ip : ::1 B:Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36 Edg/110.0.1587.69
+2023/03/12 11:47:10 => Close Modal (Patan) - ip : ::1 B:Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36 Edg/110.0.1587.69
+2023/03/12 11:47:15 => View Modal Detail (PongKwao) - ip : ::1 B:Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36 Edg/110.0.1587.69
+2023/03/12 11:47:16 => Close Modal (PongKwao) - ip : ::1 B:Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36 Edg/110.0.1587.69
+2023/03/12 11:47:19 => View Modal Detail (Maekampong) - ip : ::1 B:Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36 Edg/110.0.1587.69
+2023/03/12 11:47:21 => Close Modal (Maekampong) - ip : ::1 B:Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36 Edg/110.0.1587.69
+2023/03/12 11:47:23 => View Ebook (Maekampong) - ip : ::1 B:Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36 Edg/110.0.1587.69
+2023/03/12 11:47:38 => clickMenu PaTan - ip : ::1 B:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69
+2023/03/12 11:49:28=>clickMenu About=>ip:::1=>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69|#|#|
+2023/03/12 11:53:36 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 12:11:14 =>clickMenu About =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 12:11:19 =>clickMenu PongKwao =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 13:22:45 =>View Ebook (Patan) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 13:23:18 =>View Modal Detail (Patan) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 13:23:57 =>Close Modal (Patan) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 13:23:59 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 13:48:15 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 14:47:27 =>View Modal Detail (Maekampong) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 14:47:31 =>Close Modal (Maekampong) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 14:49:02 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 14:49:17 =>View Ebook (Patan) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 14:54:20 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 14:55:01 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 14:55:03 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 14:56:57 =>View Modal Detail (Maekampong) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 14:57:13 =>Close Modal (Maekampong) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:03:06 =>clickMenu MeaKampong =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:03:07 =>clickMenu PongKwao =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:03:11 =>View Modal Detail (Patan) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:03:18 =>Close Modal (Patan) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:06:01 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:06:49 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:08:40 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:09:55 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:11:14 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:12:09 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:12:27 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:14:45 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:15:24 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:15:54 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:16:31 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:17:29 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:23:07 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:24:27 =>View Modal Detail (Maekampong) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:24:33 =>Close Modal (Maekampong) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:26:25 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:27:31 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:27:46 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:29:01 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:29:33 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:30:53 =>View Ebook (Maekampong) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:31:06 =>View Ebook (Maekampong) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:31:12 =>View Modal Detail (Maekampong) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:31:15 =>Close Modal (Maekampong) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:31:37 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:31:46 =>View Video Clip (Maekampong) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:31:49 =>Close Modal Video (Maekampong) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:32:55 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:32:59 =>View Video Clip (Maekampong) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:33:21 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:33:25 =>View Video Clip (Maekampong) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:36:53 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:36:55 =>View Video Clip (Maekampong) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:37:56 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:37:59 =>View Video Clip (Maekampong) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:39:29 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:39:31 =>View Video Clip (Maekampong) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:40:39 =>View Video Clip (Maekampong) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:40:42 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:40:44 =>View Video Clip (Maekampong) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:40:53 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:40:55 =>View Video Clip (Maekampong) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:41:36 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:41:39 =>View Video Clip (Maekampong) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:42:00 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:42:02 =>View Video Clip (Maekampong) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:43:41 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:43:43 =>View Video Clip (Maekampong) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:44:15 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:44:22 =>View Video Clip (Maekampong) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:44:38 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:44:45 =>View Video Clip (Maekampong) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:45:01 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:45:03 =>View Video Clip (Maekampong) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:45:33 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:45:35 =>View Video Clip (Maekampong) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:45:52 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:45:58 =>View Video Clip (Maekampong) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:48:04 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:48:06 =>View Video Clip (Maekampong) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:52:42 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:52:50 =>View Video Clip (Maekampong) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:53:54 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:53:57 =>View Video Clip (PongKwao) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:54:18 =>Close Modal Video (Maekampong) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:54:20 =>View Video Clip (Patan) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:54:24 =>Close Modal Video (Maekampong) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:54:25 =>View Video Clip (Patan) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:54:32 =>Close Modal Video (Maekampong) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:55:06 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:55:10 =>View Video Clip (PongKwao) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:55:22 =>Close Modal Video =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:55:33 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:55:39 =>View Video Clip (PongKwao) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:59:16 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:59:19 =>View Video Clip (PongKwao) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:59:21 =>Close Modal Video (PongKwao) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:59:46 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 15:59:55 =>View Video Clip (PongKwao) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 16:00:09 =>Close Modal Video (PongKwao) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 16:00:14 =>View Video Clip (PongKwao) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 16:00:17 =>Close Modal Video (PongKwao) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 16:01:37 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 16:06:01 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 16:18:49 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 16:18:55 =>View Video Clip (Maekampong) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 16:19:43 =>Close Modal Video (Maekampong) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 16:19:45 =>View Video Clip (PongKwao) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 16:19:51 =>Close Modal Video (PongKwao) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 16:19:52 =>View Video Clip (Patan) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 16:19:54 =>Close Modal Video (Patan) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 16:22:39 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 16:22:45 =>View Video Clip (Maekampong) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 16:24:06 =>Close Modal Video (Maekampong) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 16:24:08 =>View Video Clip (PongKwao) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 16:24:14 =>Close Modal Video (PongKwao) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 16:38:41 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 16:38:47 =>View Video Clip (Maekampong) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 16:38:50 =>Close Modal Video (Maekampong) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 16:38:51 =>View Video Clip (PongKwao) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 16:38:59 =>Close Modal Video (PongKwao) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 16:39:01 =>View Video Clip (Patan) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/12 16:39:09 =>Close Modal Video (Patan) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/13 22:24:02 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/13 22:24:28 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/13 22:28:47 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/13 22:28:53 =>clickMenu About =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/13 22:28:55 =>View Ebook (Maekampong) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/13 22:29:00 =>View Video Clip (Maekampong) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/13 22:29:04 =>Close Modal Video (Maekampong) =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/13 22:31:13 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/13 22:36:19 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/13 22:41:16 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/13 22:41:20 =>Click Box Research team #3 อาจารย์กริช สอิ้งทอง =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
+2023/03/13 22:41:22 =>loadPage =>ip:::1 =>Browser:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.69 |#|#|
