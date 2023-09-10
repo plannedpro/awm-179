@@ -481,8 +481,8 @@ h6 {
 #hero .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
-#hero .animated2 {
-  animation: up-down 3s ease-in-out infinite alternate-reverse both;
+#hero .animatedLeftRight {
+  animation: left-right 2s ease-in-out infinite alternate-reverse both;
 }
 
 @media (max-width: 991px) {
@@ -539,6 +539,15 @@ h6 {
 
   100% {
     transform: translateY(-10px);
+  }
+}
+@keyframes left-right {
+  0% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    transform: translateX(-10px);
   }
 }
 

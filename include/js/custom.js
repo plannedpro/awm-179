@@ -165,5 +165,4 @@ function clickForViewImgImgInfographic(id){
     //     body.innerHTML += `<img src="${BASEPATH}assets/images/web/info/info${id}_${i}.png" width="100%">`;
     // }
 
-
 }

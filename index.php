@@ -76,6 +76,8 @@ $domain_ = $_SERVER['SERVER_NAME'];
     <link href="<?=BASEPATH?>include/css/custom.css" rel="stylesheet">
     <script src="<?=BASEPATH?>include/js/main_.js"></script>
     <script src="<?=BASEPATH?>include/js/custom.js"></script>
+    <script src="<?=BASEPATH?>include/js/custom-awm.js"></script>
+    
     <!-- =======================================================
   * Template Name: Arsha
   * Updated: Jul 27 2023 with Bootstrap v5.3.1
@@ -114,19 +116,35 @@ $domain_ = $_SERVER['SERVER_NAME'];
     <?php  ?>
   
     <?php 
-    include('include/page/hearder_home.php');
-    include('include/page/about.php');
-
-    // include('include/page/study_main.php');
-    // include('include/page/section_all.php');
+  
+    Route::add('/', function() {
+        include('include/page/hearder_home.php');
+        include('include/page/about.php');
     
-    // include('include/page/main.php'); 
-    include('include/page/team.php');
+        // include('include/page/study_main.php');
+        // include('include/page/section_all.php');
+        
+        // include('include/page/main.php'); 
+        include('include/page/team.php');
+    });
+
+
+    Route::add('/checkin', function() {
+        include('include/page/page_checkin.php');
+        // include('include/page/about.php');
+        // include('include/page/team.php');
+    });
+
+
+
+
 
     Route::pathNotFound(function($path) {
         // include('./include/page/error/404.php');
         //  include('./include/page/home/NewBlogs.php'); 
-        echo 'Not found! '.$path;
+        include('include/page/notfound.php');
+        // echo "<div class='text-center mt-2'>ไม่พบหน้าที่ต้องการ โปรดลองอีกครั้ง</div>";
+        // echo 'Not found! '.$path;
     });
       
     Route::methodNotAllowed(function($path, $method) {
@@ -136,12 +154,12 @@ $domain_ = $_SERVER['SERVER_NAME'];
     
     
     ?>
-  
+  <?php Route::run(BASEPATH); ?>
     <?php
     include('include/page/footer.php');
     ?>
 
-<?php Route::run(BASEPATH); ?>
+
     <div id="preloader"></div>
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
             class="bi bi-arrow-up-short"></i></a>
