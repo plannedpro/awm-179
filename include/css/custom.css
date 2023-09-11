@@ -353,7 +353,7 @@ body {
     box-shadow: 0 0 0 0.25rem rgba(209, 13, 253, 0.264);
 }
 .customPageScan{
-    margin-top: -11rem;
+    margin-top: -2rem;
 }
 .boxScan{
     background-color: #fff;
@@ -372,17 +372,90 @@ body {
     font-size: 2.5rem!important;
 }
 
-@media (max-width: 767px) {
-   .customPageScan{
-    margin-top: 0rem;
-   }
-   #hero.pagecheckin .hero-img img {
-    display: none;
+
+.showTextHelloWelcome{
+    margin-top: 2rem;
+}
+.showTextHelloWelcome .txt{
+    text-align: center;
     
+    font-size: 1.3rem;
+    border: 1px dashed;
+    border-radius: 1rem;
+    transition: all 1s;
+    height: 0rem;
+    opacity:0;
+    line-height: 1.2;
+    overflow: hidden;
 }
-#hero.pagecheckin h1{font-size: 1.5rem!important;}
-.inputCustomFormScanBarcode{
-    font-size: 1.1rem;
+.showTextHelloWelcome .txt.completed{
+    color: green;
 }
+.showTextHelloWelcome .txt.notfound{
+    color: red;
 }
 
+  .customLoading{position: relative;display: flow-root;top: 0;}
+  .customLoading .spinner-border{
+    /* position: absolute; */
+    /* top: 0; */
+    align-items: center;
+  }
+  .boxGraphBgWhite{
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: rgb(19 19 19 / 65%) 0px 8px 24px;
+  }
+  .boxBgWhite{
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+.boxBgWhite.numuserCheckInToday{
+    max-width: 13rem;
+    margin: auto;
+    margin-top: -12rem;
+    /* order: 1; */
+    position: relative;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    color: #70309f;
+}
+.boxBgWhite.numuserCheckInToday #numuserCheckInToday{
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1;
+}
+.showMobileOnly{
+    display: none;
+ }
+ .btnCheckIn{
+    width: 100%;
+    margin-top: 1rem;
+    background: #70309f;
+    color: #fff;
+ }
+ .btnCheckIn:hover{
+    background: #5f2588;
+    color: #fff;
+ }
+@media (max-width: 767px) {
+    .customPageScan{
+     margin-top: 0rem;
+    
+    }
+    #hero.pagecheckin .hero-img img {
+     display: none;
+     
+     }
+     #hero.pagecheckin h1{font-size: 1.5rem!important;}
+     .inputCustomFormScanBarcode{
+         font-size: 1.1rem;
+     }
+     .boxBgWhite.numuserCheckInToday{
+        margin-top: 4rem;
+     }
+     .showMobileOnly{
+        display: block;
+     }
+ }

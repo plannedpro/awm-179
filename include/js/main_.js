@@ -3,7 +3,7 @@ let URLAPI = '../api/master/';
 let YOURDOMAIN = window.location.hostname;
 let YOURDOMAIN_0 = window.location.hostname;
 let BASEPATH = ``;
-if (YOURDOMAIN == 'localhost') {  
+if (YOURDOMAIN == 'localhost') {
     // YOURDOMAIN = `./`;
     YOURDOMAIN_0 = `./`;
     YOURDOMAIN = 'http://localhost/'
@@ -14,10 +14,10 @@ if (YOURDOMAIN == 'localhost') {  
 // let URLAPI = '../../../api/master/';
 function setPathURL_T(path) {
     //console.log(path)
-      
+    
     BASEPATH = path;
-    URLAPI = `${path}api/master/`;   // //console.log(path, URLAPI);
-       // //console.log(YOURDOMAIN)
+    URLAPI = `${path}api/master/`;// //console.log(path, URLAPI);
+     // //console.log(YOURDOMAIN)
 }
 
 
@@ -379,3 +379,47 @@ function getCookie(name) {
 function deleteCookie(name) {
     document.cookie = name + '=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
 }
+
+function connectApi(dataUrl, dataArray, loading, handleData) {
+    console.log(URLAPI + dataUrl);
+    $.ajax({
+        type: 'post',
+        url: URLAPI + dataUrl,
+        data: JSON.stringify(dataArray),
+        contentType: "application/json",
+        dataType: "json",
+        success: function(result) {
+            if (loading != '') {
+                byId(loading).classList.remove('loading', 'ui', 'form')
+            }
+            handleData(result)
+        },
+        beforeSend: function() {
+            if (loading != '') {
+                byId(loading).classList.add('loading', 'ui', 'form')
+            }
+        },
+        error: function(data, errorThrown) {
+            console.log('request failed : ' + errorThrown+data);
+
+            showErrorConnect('ตรวจสอบการเชื่อมต่อ หรือลองรีเฟรชหน้านี้ใหม่อีกครั้ง', dataUrl, JSON.stringify(dataArray).toString(), errorThrown)
+        }
+    });
+}
+
+function days_between(date1, date2) {
+
+    // The number of milliseconds in one day
+    var ONE_DAY = 1000 * 60 * 60 * 24
+  
+    // Convert both dates to milliseconds
+    var date1_ms = date1.getTime()
+    var date2_ms = date2.getTime()
+  
+    // Calculate the difference in milliseconds
+    var difference_ms = Math.abs(date1_ms - date2_ms)
+  
+    // Convert back to days and return
+    return Math.round(difference_ms/ONE_DAY)
+  
+  }

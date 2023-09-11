@@ -1,5 +1,5 @@
 <?php 
-
+/*
 date_default_timezone_set("Asia/Bangkok");
 if(!isset($_SESSION)){ session_start();}
 ob_start();
@@ -70,4 +70,6 @@ function get_client_ip() {
 		$ipaddress = 'UNKNOWN';
 	return $ipaddress;
   }
+
+  */
 ?>

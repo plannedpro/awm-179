@@ -6,6 +6,7 @@ include 'include/Steampixel/Route.php';
 define('BASEPATH','/');
 // define('BASEPATH','/gitHub/crmu66-travel2/');
 $domain_ = $_SERVER['SERVER_NAME'];
+$versionScript = 1;
 
 ?>
 
@@ -14,8 +15,10 @@ $domain_ = $_SERVER['SERVER_NAME'];
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
     <title>ระบบบันทึกข้อมูลการใช้บริการห้องสมุด โรงเรียนอนุบาลวังน้ำเย็นมิตรภาพที่ 179</title>
-    <meta name="description" content="ระบบบันทึกข้อมูลการใช้บริการห้องสมุด โรงเรียนอนุบาลวังน้ำเย็นมิตรภาพที่ 179 โดย Plannedpro Creative Solutions" />
+    <meta name="description"
+        content="ระบบบันทึกข้อมูลการใช้บริการห้องสมุด โรงเรียนอนุบาลวังน้ำเย็นมิตรภาพที่ 179 โดย Plannedpro Creative Solutions" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
 
     <!-- facebook share -->
     <link rel="image_src" type="image/jpeg" href="https://<?=$domain_?>/facebbook1.png">
@@ -23,13 +26,15 @@ $domain_ = $_SERVER['SERVER_NAME'];
     <meta property="fb:admins" content="">
     <meta property="og:type" content="website">
     <meta property="og:title" content="ระบบบันทึกข้อมูลการใช้บริการห้องสมุด โรงเรียนอนุบาลวังน้ำเย็นมิตรภาพที่ 179">
-    <meta property="og:description" content="ระบบบันทึกข้อมูลการใช้บริการห้องสมุด โรงเรียนอนุบาลวังน้ำเย็นมิตรภาพที่ 179">
+    <meta property="og:description"
+        content="ระบบบันทึกข้อมูลการใช้บริการห้องสมุด โรงเรียนอนุบาลวังน้ำเย็นมิตรภาพที่ 179">
     <meta property="og:image" content="https://<?=$domain_?>/facebbook1.png">
     <meta property="og:url" content="">
     <meta property="og:site_name" content="P">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="ระบบบันทึกข้อมูลการใช้บริการห้องสมุด โรงเรียนอนุบาลวังน้ำเย็นมิตรภาพที่ 179">
-    <meta name="twitter:description" content="ระบบบันทึกข้อมูลการใช้บริการห้องสมุด โรงเรียนอนุบาลวังน้ำเย็นมิตรภาพที่ 179">
+    <meta name="twitter:description"
+        content="ระบบบันทึกข้อมูลการใช้บริการห้องสมุด โรงเรียนอนุบาลวังน้ำเย็นมิตรภาพที่ 179">
     <meta name="twitter:image" content="https://<?=$domain_?>/facebbook1.png">
     <meta property="fb:pages" content="" />
     <meta property="og:image:width" content="371">
@@ -38,12 +43,17 @@ $domain_ = $_SERVER['SERVER_NAME'];
     <link rel="canonical" href="https://<?=$domain_?>">
     <meta name="theme-color" content="#8dc63f">
 
-     <!--====== Favicon Icon ======-->
-     <link rel="shortcut icon" href="<?=BASEPATH?>include/img/logo.png" type="image/png" />
-     <link href="<?=BASEPATH?>include/img/logo.png" rel="apple-touch-icon">
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="<?=BASEPATH?>include/img/logo.png" type="image/png" />
+    <link href="<?=BASEPATH?>include/img/logo.png" rel="apple-touch-icon">
 
-
-
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts@latest/dist/apexcharts.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/apexcharts@latest/dist/apexcharts.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"> -->
+    <script src="https://cdn.jsdelivr.net/npm/moment@latest"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/daterangepicker@latest"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <!-- Favicons -->
     <!-- <link href="<?=BASEPATH?>assets/img/favicon.png" rel="icon">
     <link href="<?=BASEPATH?>assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
@@ -54,9 +64,19 @@ $domain_ = $_SERVER['SERVER_NAME'];
         rel="stylesheet">
 
     <!-- Vendor CSS Files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11" async></script>
+
+
+    <link href="<?=BASEPATH?>include/css/semantic.css" rel="stylesheet">
+
+
     <link href="<?=BASEPATH?>assets/vendor/aos/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         crossorigin="anonymous">
+
+
 
     <!-- <link href="<?=BASEPATH?>assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
 
@@ -70,14 +90,14 @@ $domain_ = $_SERVER['SERVER_NAME'];
 
 
     <!-- Template Main CSS File -->
-    <link href="<?=BASEPATH?>assets/css/style.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link href="<?=BASEPATH?>assets/css/style.css?v=<?=$versionScript?>" rel="stylesheet">
+
     <script src="https://kit.fontawesome.com/8e7e2562e0.js" crossorigin="anonymous"></script>
-    <link href="<?=BASEPATH?>include/css/custom.css" rel="stylesheet">
-    <script src="<?=BASEPATH?>include/js/main_.js"></script>
-    <script src="<?=BASEPATH?>include/js/custom.js"></script>
-    <script src="<?=BASEPATH?>include/js/custom-awm.js"></script>
-    
+    <link href="<?=BASEPATH?>include/css/custom.css?v=<?=$versionScript?>" rel="stylesheet">
+    <script src="<?=BASEPATH?>include/js/main_.js?v=<?=$versionScript?>"></script>
+    <script src="<?=BASEPATH?>include/js/custom.js?v=<?=$versionScript?>"></script>
+    <script src="<?=BASEPATH?>include/js/custom-awm.js?v=<?=$versionScript?>"></script>
+
     <!-- =======================================================
   * Template Name: Arsha
   * Updated: Jul 27 2023 with Bootstrap v5.3.1
@@ -86,26 +106,27 @@ $domain_ = $_SERVER['SERVER_NAME'];
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 
-  <script>
+    <script>
     $(window).ready(() => {
 
         setPathURL_T('<?=BASEPATH?>');
         saveLogs_web('view', 'loadPage');
-        $('.showImgPreviewOnModal').click(function(){
+        $('.showImgPreviewOnModal').click(function() {
             // console.log(this);
             let img = this.src;
             openModal('ShowModal_img');
             let body = byId('ShowModal_img-body');
-            body.innerHTML=`<img src="${img}" width="100%">`;
+            body.innerHTML = `<img src="${img}" width="100%">`;
         })
-        $('.clickForViewIngoImg').click(function(){
+        $('.clickForViewIngoImg').click(function() {
             // console.log(this);
             let img = this.dataset.id;
             openModal('ShowModal_img');
-            
+
             clickForViewImgImgInfographic(img)
             // body.innerHTML=`<img src="${img}" width="100%">`;
         })
+        // $('.customLoading').append( `<div class="spinner-border"></div>`);
     });
     </script>
 </head>
@@ -114,7 +135,7 @@ $domain_ = $_SERVER['SERVER_NAME'];
 
     <?php include('include/page/header.php'); ?>
     <?php  ?>
-  
+
     <?php 
   
     Route::add('/', function() {
@@ -154,7 +175,7 @@ $domain_ = $_SERVER['SERVER_NAME'];
     
     
     ?>
-  <?php Route::run(BASEPATH); ?>
+    <?php Route::run(BASEPATH); ?>
     <?php
     include('include/page/footer.php');
     ?>
