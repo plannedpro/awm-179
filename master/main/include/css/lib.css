@@ -1,0 +1,127 @@
+.InputGroupcheckbox {
+  display: none;
+}
+
+.LabelGroupCheckbox {
+  border: 1px solid #ebebeb;
+  padding: .5rem;
+  width: 100%;
+  text-align: center;
+  border-radius: .5rem;
+  color: #000 !important;
+  transition: all .5s;
+  cursor: pointer;
+}
+
+.InputGroupcheckbox:checked+.LabelGroupCheckbox {
+  background-color: #cf5395;
+  color: #fff !important;
+  transition: all .5s;
+  border: 1px solid #b53278;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(122, 122, 122);
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: rgb(192, 192, 192);
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: rgb(174, 174, 174);
+}
+
+.areaShowPreviewImgUpload {
+  display: none;
+  /* display: flex; */
+  height: 12rem;
+  overflow: hidden;
+  align-items: center;
+  border-radius: 0.5rem;
+  border: 1px solid #e8e8e8;
+  max-width: 10rem;
+}
+
+.areaShowPreviewImgUpload img {}
+
+.formUploadImgCustom {
+  height: 12rem;
+  overflow: hidden;
+  align-items: center;
+  border-radius: 0.5rem;
+  border: 1px solid #e8e8e8;
+  max-width: 10rem;
+  display: flex;
+  cursor: pointer;
+}
+
+table#table-users {
+  width: 100% !important;
+}
+
+.showDashBoardUserSTD {}
+
+.modal-body-wrapper {
+  overflow-y: scroll;
+  height: 60vh;
+}
+
+@media print {
+  .forPrint {
+    display: block;
+    column-count: 2;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+  }
+
+  .noPrint {
+    display: none;
+  }
+}
+
+@page {
+  size: auto;
+  /* OR 6.5in 8.5in; A4 */
+  margin-top: 0.5cm;
+  margin-left: 0.5cm;
+  margin-right: 0.5cm;
+}
+
+
+@media print {
+  .modal-dialog {
+    max-width: 100%;
+    width: 100%;
+
+  }
+}
+
+@media print {
+  .two {
+    column-count: 2;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+  }
+
+  .one {
+    column-count: 1;
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+  }
+}
+
+
+.input_book_barcode {
+  height: 3rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #e83e8c;
+  background-color: #fff8fb;
+}

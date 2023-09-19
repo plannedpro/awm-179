@@ -35,7 +35,7 @@
                     <!-- <li><a class="nav-link scrollto" href="#team"><i class='bx bx-user me-1' ></i> ผู้บริหาร</a></li> -->
                     <li><a class="nav-link scrollto" href="<?=BASEPATH?>checkin"><i class='bx bx-user me-1' ></i> หน้าจอบันทึกการเข้าใช้งาน</a></li>
 
-                    <li><a class="nav-link scrollto" href="#login"><i class='bx bx-lock-alt me-1' ></i> เข้าสู่ระบบ</a></li>
+                    <li><a class="nav-link scrollto" href="<?=BASEPATH?>master"><i class='bx bx-lock-alt me-1' ></i> เข้าสู่ระบบ</a></li>
                     <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
                             <li><a href="#">Drop Down 1</a></li>

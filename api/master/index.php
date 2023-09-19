@@ -51,9 +51,9 @@ $app->group('/company', function () use ($app) {
 });
 
 
-$app->group('/checkin', function () use ($app) {
+$app->group('/public', function () use ($app) {
 
-  $app->post("/scan",function() use($app){
+  $app->post("/checkin",function() use($app){
     $json = $app->request->getBody();
     $app->response->setStatus(200);
     $contentType = $app->response->headers->get('Content-Type');
@@ -66,11 +66,77 @@ $app->group('/checkin', function () use ($app) {
     // $result = array(1,2);
     echo json_encode($result);
   });
+});
 
+$app->group('/master', function () use ($app) {
+  $app->post("/login",function() use($app){
+    $json = $app->request->getBody();
+    $app->response->setStatus(200);
+    $contentType = $app->response->headers->get('Content-Type');
+    $app->response->headers->set('Content-Type', 'application/json');
+    $data = json_decode($json,true);
+    $login__ip =checkTextSQL($data["login__ip"]);
+    $login__username =checkTextSQL($data["login__username"]);
+    $login__password =checkTextSQL($data["login__password"]);
+    $result = checkloginMaster($login__ip,$login__username,$login__password);
+    echo json_encode($result);
+  });
+  $app->post("/getaccount",function() use($app){
+    $json = $app->request->getBody();
+    $app->response->setStatus(200);
+    $contentType = $app->response->headers->get('Content-Type');
+    $app->response->headers->set('Content-Type', 'application/json');
+    $data = json_decode($json,true);
+    $type =checkTextSQL($data["type"]);
+    $dataAPI =checkTextSQL($data["data"]);
+    $dataoption =checkTextSQL($data["dataoption"]);
+    $result = getDataAccount($type,$dataAPI,$dataoption);
+    echo json_encode($result);
+  });
+  $app->post("/user",function() use($app){
+    $json = $app->request->getBody();
+    $app->response->setStatus(200);
+    $contentType = $app->response->headers->get('Content-Type');
+    $app->response->headers->set('Content-Type', 'application/json');
+    $data = json_decode($json,true);
+    $type =checkTextSQL($data["type"]);
+    $dataAPI =checkTextSQL($data["data"]);
+    $dataoption =checkTextSQL($data["dataoption"]);
+    $result = getdataUser($type,$dataAPI,$dataoption);
+    // $result = array(1,2);
+    echo json_encode($result);
+  });
+  $app->post("/setStatus",function() use($app){
+    $json = $app->request->getBody();
+    $app->response->setStatus(200);
+    $contentType = $app->response->headers->get('Content-Type');
+    $app->response->headers->set('Content-Type', 'application/json');
+    $data = json_decode($json,true);
+    $tableDB =checkTextSQL($data["tableDB"]);
+    $columnstatus =checkTextSQL($data["columnstatus"]);
+    $columnwhere =checkTextSQL($data["columnwhere"]);
+    $newstatus =checkTextSQL($data["newstatus"]);
+    $id =checkTextSQL($data["id"]);
+    $type =checkTextSQL($data["type"]);
+    $search =checkTextSQL($data["search"]);
+    $result = MasterSetStatus($tableDB,$columnstatus,$newstatus,$columnwhere,$id,$type,$search);
+    echo json_encode($result);
+  });
 
-  
-  
-  
+  $app->post("/book",function() use($app){
+    $json = $app->request->getBody();
+    $app->response->setStatus(200);
+    $contentType = $app->response->headers->get('Content-Type');
+    $app->response->headers->set('Content-Type', 'application/json');
+    $data = json_decode($json,true);
+    $type =checkTextSQL($data["type"]);
+    $dataAPI =checkTextSQL($data["data"]);
+    $dataoption =checkTextSQL($data["dataoption"]);
+    $result = manageDataBook($type,$dataAPI,$dataoption);
+    // $result = array(1,2);
+    echo json_encode($result);
+  });
+
 });
 
 

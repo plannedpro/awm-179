@@ -2,7 +2,7 @@
 
 date_default_timezone_set("Asia/Bangkok");
 require_once('../../include/php/connect.php');
-// require_once('../../include/php/time.php');
+require_once('../../include/php/time.php');
 
 if(!isset($_SESSION)){ session_start();}
 ob_start();
@@ -142,34 +142,44 @@ function getDataSQLv1($type,$tablename,$condition){
       return 0;
     }
   }
+  function reCheckSID($sid){
+    $FindLastSIDA =  getDataSQLv1(1,'SELECT user_sid FROM lib_users  where user_status=1 and user_sid=?',array($sid)); 
+    if(count($FindLastSIDA)>0){
+      $FindLastSID =  getDataSQLv1(1,'SELECT user_sid FROM lib_users  where user_status=1 order by user_sid desc limit 1',array()); 
+      $SID=count($FindLastSID)>0?$FindLastSID[0]['user_sid']+1:'00001';
+    }else{
+      $SID=$sid;
+    }
+    return $SID;
+  }
 
-  // function MasterSetStatus($tableDB,$columnstatus,$newstatus,$columnwhere,$id,$type,$search){
-  //   global $db;
-  //   $olll = array($tableDB,$columnstatus,$newstatus,$columnwhere,$id,$type,$search);
-  //   $adminId=$_SESSION["id-user-master"];
-  //   $admintoken=$_SESSION["token-user-master"];
-  //   $datareturn = array();
-  //   if($adminId && $admintoken){
-  //     $data =array(); 
-  //     $getdata = $db->prepare("SELECT *  FROM $tableDB WHERE $columnwhere = ? ");
-  //     $getdata->execute(array($id));
-  //     $dataservice = $getdata->fetch(PDO::FETCH_ASSOC);  
-  //     if($dataservice){
-  //       $update_status = $db->prepare("UPDATE $tableDB SET $columnstatus=? WHERE $columnwhere=?");
-  //       $update_status->execute(array($newstatus,$id));
-  //       if($update_status){
-  //         array_push($datareturn,array('status'=>1,'msg'=>'ดำเนินการสำเร็จ','data'=>$olll));  
-  //       }else{
-  //         array_push($datareturn,array('status'=>0,'msg'=>'Error','data'=>$olll));  
-  //       }
+  function MasterSetStatus($tableDB,$columnstatus,$newstatus,$columnwhere,$id,$type,$search){
+    global $db;
+    $olll = array($tableDB,$columnstatus,$newstatus,$columnwhere,$id,$type,$search);
+    $adminId=$_SESSION["id-user-master"];
+    $admintoken=$_SESSION["token-user-master"];
+    $datareturn = array();
+    if($adminId && $admintoken){
+      $data =array(); 
+      $getdata = $db->prepare("SELECT *  FROM $tableDB WHERE $columnwhere = ? ");
+      $getdata->execute(array($id));
+      $dataservice = $getdata->fetch(PDO::FETCH_ASSOC);  
+      if($dataservice){
+        $update_status = $db->prepare("UPDATE $tableDB SET $columnstatus=? WHERE $columnwhere=?");
+        $update_status->execute(array($newstatus,$id));
+        if($update_status){
+          array_push($datareturn,array('status'=>1,'msg'=>'ดำเนินการสำเร็จ','data'=>$olll));  
+        }else{
+          array_push($datareturn,array('status'=>0,'msg'=>'Error','data'=>$olll));  
+        }
        
-  //     }else{
-  //       array_push($datareturn,array('status'=>0,'msg'=>'0you don\'t currently have permission to access this data','data'=>array()));
-  //     }
-  //   }else{
-  //     array_push($datareturn,array('status'=>0,'msg'=>'you don\'t currently have permission to access this data','data'=>array()));
-  //   }
-  //   return $datareturn;
-  // }
+      }else{
+        array_push($datareturn,array('status'=>0,'msg'=>'0you don\'t currently have permission to access this data','data'=>array()));
+      }
+    }else{
+      array_push($datareturn,array('status'=>0,'msg'=>'you don\'t currently have permission to access this data','data'=>array()));
+    }
+    return $datareturn;
+  }
 
 ?>

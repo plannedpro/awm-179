@@ -36,7 +36,7 @@ function checkInAWM(id){
         sid:id
     }
     console.log(dataAPI);
-    connectApi('checkin/scan', { type: 'checkin', data: dataAPI, dataoption: 0 }, '', function(output) {
+    connectApi('public/checkin', { type: 'checkin', data: dataAPI, dataoption: 0 }, '', function(output) {
         console.log(output)
         if(output.status==200){
             byId(`sound-hello_welcome`).play();
@@ -76,7 +76,7 @@ function getDataGraphAndUserCheckIn(){
         end:FILTER_END
     }
     console.log(dataAPI);
-    connectApi('checkin/scan', { type: 'last30AndToday', data: dataAPI, dataoption: 0 }, '', function(output) {
+    connectApi('public/checkin', { type: 'last30AndToday', data: dataAPI, dataoption: 0 }, '', function(output) {
         console.log(output)
         if(output.status==200){
             let last30 = output.data[0].last30;
@@ -114,6 +114,7 @@ function createGraphCheckInLast30(data,dataAPI){
             count++;
         })
     })
+    console.log(data);
 
     byId('numuserCheckInToday').innerHTML = addCommas(countToday);
    //console.log(arrLastMonth_temp,arrInprocess)
