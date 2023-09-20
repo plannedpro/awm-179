@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Sep 19, 2023 at 08:22 PM
+-- Generation Time: Sep 20, 2023 at 08:32 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.0.28
 
@@ -50,7 +50,9 @@ CREATE TABLE `lib_book` (
 
 INSERT INTO `lib_book` (`book_id`, `book_school`, `book_isbn`, `book_ref`, `book_barcode`, `book_name`, `book_year`, `book_shelf_id`, `book_group_id`, `book_num`, `book_remark`, `book_status`, `book_lastupdate`, `book_cover`) VALUES
 (1, 1, '123', 'dfdfdf', '123', 'dfdfdfdfdf', 2023, 1, 2, 1, NULL, 1, '2023-09-19 23:32:36', 'null.png'),
-(2, 1, '1', ' TEST01', '1', 'วิทยาศาสตร์น่ารู้', 2023, 1, 1, 1, NULL, 1, '2023-09-19 23:33:29', '20230919-233329-JW7aD.jpg');
+(2, 1, '1', ' TEST01', '1', 'วิทยาศาสตร์น่ารู้', 2023, 1, 1, 1, NULL, 1, '2023-09-19 23:33:29', '20230919-233329-JW7aD.jpg'),
+(3, 1, '124', 'กข2556 กดส2', '124', 'ทดสอบชื่อ', 2023, 1, 1, 2, NULL, 1, '2023-09-20 13:01:22', 'null.png'),
+(4, 1, '125', '028.8 ถ159ก 2549', '125', 'การทำขนมไทย สูตรชาววังแท้', 2023, 0, 0, 1, NULL, 1, '2023-09-20 13:02:38', 'null.png');
 
 -- --------------------------------------------------------
 
@@ -103,6 +105,58 @@ INSERT INTO `lib_book_shelf` (`shelf_id`, `shelf_code`, `shelf_remark`, `shelf_s
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `lib_borrow`
+--
+
+CREATE TABLE `lib_borrow` (
+  `borrow_id` int(11) NOT NULL,
+  `borrow_no` varchar(15) NOT NULL,
+  `borrow_token` varchar(50) NOT NULL,
+  `borrow_user_id` int(11) NOT NULL,
+  `borrow_create_doc` datetime NOT NULL DEFAULT current_timestamp(),
+  `borrow_create_by` int(11) NOT NULL,
+  `borrow_startdate` date NOT NULL,
+  `borrow_duedate` date NOT NULL,
+  `borrow_status` int(1) NOT NULL DEFAULT 1
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+--
+-- Dumping data for table `lib_borrow`
+--
+
+INSERT INTO `lib_borrow` (`borrow_id`, `borrow_no`, `borrow_token`, `borrow_user_id`, `borrow_create_doc`, `borrow_create_by`, `borrow_startdate`, `borrow_duedate`, `borrow_status`) VALUES
+(1, '23090001', 'FLcQbB', 1, '2023-09-21 01:31:52', 1, '2023-09-21', '2023-09-28', 1),
+(2, '23090002', 'vhdExi', 1, '2023-09-21 01:32:07', 1, '2023-09-21', '2023-09-28', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `lib_borrow_book`
+--
+
+CREATE TABLE `lib_borrow_book` (
+  `bb_id` int(11) NOT NULL,
+  `bb_borrow_id` int(11) NOT NULL,
+  `bb_book_id` int(11) NOT NULL,
+  `bb_return` datetime DEFAULT NULL,
+  `bb_received` int(11) NOT NULL DEFAULT 0,
+  `bb_status` int(1) NOT NULL DEFAULT 1,
+  `bb_timestamp` datetime NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+--
+-- Dumping data for table `lib_borrow_book`
+--
+
+INSERT INTO `lib_borrow_book` (`bb_id`, `bb_borrow_id`, `bb_book_id`, `bb_return`, `bb_received`, `bb_status`, `bb_timestamp`) VALUES
+(1, 1, 1, NULL, 0, 1, '2023-09-21 01:31:52'),
+(2, 1, 3, NULL, 0, 1, '2023-09-21 01:31:52'),
+(3, 2, 1, NULL, 0, 1, '2023-09-21 01:32:07'),
+(4, 2, 3, NULL, 0, 1, '2023-09-21 01:32:07');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `lib_checkin`
 --
 
@@ -132,7 +186,11 @@ INSERT INTO `lib_checkin` (`checkin_id`, `checkin_school`, `checkin_user`, `chec
 (11, 1, 1, '2023-09-11 19:32:15', 1),
 (12, 1, 1, '2023-09-16 19:43:17', 1),
 (13, 1, 1, '2023-09-17 10:06:11', 1),
-(14, 1, 1, '2023-09-18 14:10:20', 1);
+(14, 1, 1, '2023-09-18 14:10:20', 1),
+(15, 1, 5, '2023-09-20 12:14:58', 1),
+(16, 1, 1, '2023-09-20 15:44:20', 1),
+(17, 1, 1, '2023-09-19 15:44:25', 1),
+(18, 1, 1, '2023-09-20 15:44:34', 1);
 
 -- --------------------------------------------------------
 
@@ -522,6 +580,18 @@ ALTER TABLE `lib_book_shelf`
   ADD PRIMARY KEY (`shelf_id`);
 
 --
+-- Indexes for table `lib_borrow`
+--
+ALTER TABLE `lib_borrow`
+  ADD PRIMARY KEY (`borrow_id`);
+
+--
+-- Indexes for table `lib_borrow_book`
+--
+ALTER TABLE `lib_borrow_book`
+  ADD PRIMARY KEY (`bb_id`);
+
+--
 -- Indexes for table `lib_checkin`
 --
 ALTER TABLE `lib_checkin`
@@ -565,7 +635,7 @@ ALTER TABLE `system_setting`
 -- AUTO_INCREMENT for table `lib_book`
 --
 ALTER TABLE `lib_book`
-  MODIFY `book_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `book_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `lib_book_group`
@@ -580,10 +650,22 @@ ALTER TABLE `lib_book_shelf`
   MODIFY `shelf_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
+-- AUTO_INCREMENT for table `lib_borrow`
+--
+ALTER TABLE `lib_borrow`
+  MODIFY `borrow_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `lib_borrow_book`
+--
+ALTER TABLE `lib_borrow_book`
+  MODIFY `bb_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
 -- AUTO_INCREMENT for table `lib_checkin`
 --
 ALTER TABLE `lib_checkin`
-  MODIFY `checkin_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `checkin_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `lib_school`
