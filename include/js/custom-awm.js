@@ -96,7 +96,7 @@ function createGraphCheckInLast30(data,dataAPI){
    //console.log(durationDay);
     for(let i=0;i<durationDay;i++){
       arrLastMonth.push(moment(dataAPI.start).add(i, 'days').startOf('day').format('Do MMM'))
-      arrLastMonth_temp.push(moment(dataAPI.start).endOf('day').add(i, 'days').format('YYYY-MM-DD'))
+      arrLastMonth_temp.push(moment(dataAPI.start).add(i, 'days').endOf('day').format('YYYY-MM-DD'))
       arrInprocess.push(0)
     }
     ////console.log(data);

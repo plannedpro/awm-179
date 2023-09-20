@@ -12249,7 +12249,7 @@ body.sidebar-collapse:not(.sidebar-mini-md):not(.sidebar-mini) .main-header::bef
 }
 
 .nav-sidebar .nav-item>.nav-link {
-    margin-bottom: .2rem
+    margin-bottom: .2rem;
 }
 
 .nav-sidebar .nav-item>.nav-link .right {
@@ -12310,7 +12310,7 @@ body.sidebar-collapse:not(.sidebar-mini-md):not(.sidebar-mini) .main-header::bef
 .nav-sidebar>.nav-item .nav-icon.fas,
 .nav-sidebar>.nav-item .nav-icon.glyphicon,
 .nav-sidebar>.nav-item .nav-icon.ion {
-    font-size: 1.1rem
+    font-size: 1.2rem;
 }
 
 .nav-sidebar>.nav-item .float-right {
@@ -12352,12 +12352,13 @@ body.sidebar-collapse:not(.sidebar-mini-md):not(.sidebar-mini) .main-header::bef
 }
 
 .nav-sidebar .nav-header:not(:first-of-type) {
-    padding: 1.7rem 1rem .5rem
+    padding: 1rem 1rem .5rem;
 }
 
 .nav-sidebar .nav-link p {
     display: inline-block;
-    margin: 0
+    margin: 0;
+    margin-left: .5rem;
 }
 
 #sidebar-overlay {
@@ -12507,7 +12508,7 @@ body.sidebar-collapse:not(.sidebar-mini-md):not(.sidebar-mini) .main-header::bef
 
 [class*=sidebar-dark-] .nav-sidebar>.nav-item>.nav-link.active {
     color: #fff;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24)
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
 }
 
 [class*=sidebar-dark-] .nav-sidebar>.nav-item>.nav-treeview {
@@ -13555,7 +13556,8 @@ body.sidebar-collapse:not(.sidebar-mini-md):not(.sidebar-mini) .main-header::bef
 }
 
 .nav-sidebar .nav-item>.nav-link {
-    position: relative
+    position: relative;
+    display: flow;
 }
 
 .nav-sidebar .nav-item>.nav-link>.float-right {

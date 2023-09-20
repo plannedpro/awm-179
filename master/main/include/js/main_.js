@@ -47,20 +47,47 @@ let createTd = function(num, tr) {
 }
 let arrWeek = ["อา.", "จ.", "อ.", "พ.", "พฤ.", "ศ.", "ส."]
 let arrMonthThaiFull = ["มกราคม", "กุมภาพันธ์", "มีนาคม", "เมษายน", "พฤษภาคม", "มิถุนายน", "กรกฎาคม", "สิงหาคม", "กันยายน", "ตุลาคม", "พฤศจิกายน", "ธันวาคม"]
-
+let ArrMonth = ['มกราคม', 'กุมภาพันธ์', 'มีนาคม', 'เมษายน', 'พฤษภาคม', 'มิถุนายน', 'กรกฎาคม', 'สิงหาคม', 'กันยายน', 'ตุลาคม', 'พฤศจิกายน', 'ธันวาคม']
+let ArrMonthShort = ['ม.ค.', 'ก.พ.', 'มี.ค.', 'เม.ย.', 'พ.ค.', 'มิ.ย.', 'ก.ค.', 'ส.ค.', 'ก.ย.', 'ต.ค.', 'พ.ย.', 'ธ.ค.']
+let ArrMonthEN = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+let ArrMonthENShort = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec']
+let ArrDayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+let ArrDayNamesShort = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+let ArrDayInMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+let ArrDayNamesTH = ["อาทิตย์", "จันทร์", "อังคาร", "พุธ", "พฤหัสบดี", "ศุกร์", "เสาร์"]
+let ArrDayNamesTHShort = ["อ.", "จ.", "อ.", "พ.", "พฤ.", "ศ.", "ส."]
 // //console.log(convertDate(1644498354))
+moment.tz.setDefault("Asia/Bangkok");
+// moment.locale('th')
+moment.locale('TH');
+
+
+// moment.lang('TH');
+moment.locale('TH', {
+    months : arrMonthThaiFull,
+    monthsShort : ArrMonthShort,
+    monthsParseExact : true,
+    // weekdays : 'dimanche_lundi_mardi_mercredi_jeudi_vendredi_samedi'.split('_'),
+    weekdays:ArrDayNamesTH,
+    weekdaysShort : ArrDayNamesTHShort,
+    weekdaysMin : ArrDayNamesTHShort,
+    weekdaysParseExact : true,
+
+    meridiem : function (hours, minutes, isLower) {
+        // console.log(hours, minutes, isLower)
+        return hours < 12 ? 'เช้า' : hours==12? 'เที่ยง':  'บ่าย';
+    },
+    week : {
+        dow : 1, // Monday is the first day of the week.
+        doy : 4  // Used to determine first week of the year.
+    },
+    months :arrMonthThaiFull,
+    days:ArrDayNamesTH
+});
 
 
 function convertDate(milliseconds) {
-    let ArrMonth = ['มกราคม', 'กุมภาพันธ์', 'มีนาคม', 'เมษายน', 'พฤษภาคม', 'มิถุนายน', 'กรกฎาคม', 'สิงหาคม', 'กันยายน', 'ตุลาคม', 'พฤศจิกายน', 'ธันวาคม']
-    let ArrMonthShort = ['ม.ค.', 'ก.พ.', 'มี.ค.', 'เม.ย.', 'พ.ค.', 'มิ.ย.', 'ก.ค.', 'ส.ค.', 'ก.ย.', 'ต.ค.', 'พ.ย.', 'ธ.ค.']
-    let ArrMonthEN = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
-    let ArrMonthENShort = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec']
-    let ArrDayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-    let ArrDayNamesShort = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
-    let ArrDayInMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-    let ArrDayNamesTH = ["อาทิตย์", "จันทร์", "อังคาร", "พุธ", "พฤหัสบดี", "ศุกร์", "เสาร์"]
-    let ArrDayNamesTHShort = ["อ.", "จ.", "อ.", "พ.", "พฤ.", "ศ.", "ส."]
+  
 
     let myDate = new Date(milliseconds * 1000);
 
@@ -112,6 +139,7 @@ function convertDate(milliseconds) {
     }
     return returnArr
 }
+
 
 
 function connectApi(dataUrl, dataArray, loading, handleData) {

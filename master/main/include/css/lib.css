@@ -113,6 +113,7 @@ table#table-users {
     column-count: 1;
     -webkit-column-count: 1;
     -moz-column-count: 1;
+    /* grid-template-columns: repeat(); */
   }
 }
 
@@ -123,5 +124,248 @@ table#table-users {
   font-weight: 600;
   font-size: 1.5rem;
   color: #e83e8c;
-  background-color: #fff8fb;
+  /* background-color: #fff8fb; */
+}
+
+.inputOnDataTable {
+  width: 4rem;
+  font-weight: 600;
+  text-align: center;
+  border-radius: .3rem;
+  border: 1px solid #d9d9d9;
+  height: 1.3rem;
+}
+
+.inputOnDataTable:focus-visible {
+  border: 1px solid #d9d9d9 !important;
+  color: red;
+  outline: 0 !important
+}
+
+.boxGraphCheckInLast30 {
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 1rem 0px;
+  box-shadow: #ebebeb 0px 5px 14px 0px;
+  width: 100%;
+}
+
+.CheckInreport {
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: #ebebeb 0px 5px 14px 0px;
+}
+
+.titleG {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: .5rem;
+}
+
+.boxWhiteDashboard {
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: #ebebeb 0px 5px 14px 0px;
+  text-align: center;
+}
+
+.boxWhiteDashboard .title {
+  font-weight: 300;
+}
+
+.boxWhiteDashboard .num {
+  font-size: 2rem;
+  line-height: 1;
+  color: #cf5395;
+}
+
+.boxWhiteDashboard .subtitle {
+  font-weight: 300;
+}
+
+.cardBorrow {
+  max-width: 570px;
+  margin: auto;
+}
+
+.inputScanBarcode {
+  text-align: center;
+  font-weight: 600;
+  font-size: 2rem;
+  height: 3rem;
+  color: #a6a6a6;
+}
+
+.inputScanBarcode.std {}
+
+.showResultScanBarcode {
+  display: flex;
+  border: 1px dashed #cf5395;
+  border-radius: 0.5rem;
+  background-color: #cf53950d;
+  padding: 1rem;
+  position: relative;
+}
+
+.showResultScanBarcode .imgprofile {
+  width: 7rem;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.showResultScanBarcode .imgprofile .img {
+  height: 8rem;
+  border: 1px solid #cf539563;
+  border-radius: .5rem;
+  overflow: hidden;
+  width: 7rem;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.showResultScanBarcode .imgprofile .sid {
+  font-weight: 600;
+  margin-top: .25rem;
+}
+
+.showResultScanBarcode .datauser {
+  margin-left: .5rem;
+  width: 90%;
+  text-align: left;
+  margin-top: .5rem;
+}
+
+.showResultScanBarcode .datauser .title {
+  font-size: 1.5rem;
+  line-height: 1;
+  color: #cf5395;
+  font-weight: 500;
+  margin-bottom: .5rem;
+}
+
+.showResultScanBarcode .datauser .subtitle {}
+
+.showResultScanBarcode .tagUserType {
+  position: absolute;
+  top: -4px;
+  right: 7px;
+  background-color: #8c5cb0;
+  color: #fff;
+  padding: .25rem 2rem;
+  border-radius: 0 0rem .5rem .5rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 19px 0px;
+  line-height: 1.2;
+}
+
+.boxHistoryEasy .box1 {
+  text-align: center;
+  background-color: #fff;
+  border-radius: .5rem;
+  line-height: 1.2;
+  padding: .5rem 0;
+  font-size: .8rem;
+  cursor: pointer;
+}
+
+.boxHistoryEasy .box1 .tnum {
+  font-size: 1.2rem;
+}
+
+
+
+.boxHistoryEasy .box1.pending {
+  background-color: #cf53952e;
+}
+
+.btnGroupConfirmAfterScan {
+  gap: 5px;
+  margin-top: .5rem;
+}
+
+.btn-primary {
+  background-color: #cf5395;
+  border: 1px solid #b5387b;
+}
+
+.btn-primary:focus-visible,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:hover {
+  background-color: #e064a6 !important;
+  border-color: #c2538e !important;
+  box-shadow: 0 0 0 0.2rem rgba(255, 0, 195, 0.5);
+}
+
+.showResultScanBarcode .item {
+  width: 100%;
+  display: flex;
+  /* border: 1px solid #cf5395; */
+  background-color: #fff;
+  border-radius: .25rem;
+  margin-bottom: .25rem;
+  padding: .25rem;
+}
+
+.showResultScanBarcode .item .img {
+  border: 1px solid #cf539563;
+  border-radius: .5rem;
+  overflow: hidden;
+  width: 4rem;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  background-color: #fff;
+  cursor: pointer;
+  height: 4.5rem;
+}
+
+.showResultScanBarcode .item .databook {
+  width: 85%;
+  text-align: left;
+  padding: .2rem 0 .25rem .5rem;
+}
+
+.showResultScanBarcode .item .databook .name {
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #6f309e;
+}
+
+.showResultScanBarcode .item .databook .detail {
+  font-size: .8rem;
+  line-height: 1.2;
+  /* display: grid; */
+  /* grid-template-columns: repeat(3,1fr); */
+}
+
+.showResultScanBarcode .item .option {
+  text-align: end;
+}
+.btnDeleteBookOption{
+  cursor: pointer;
+}
+.nav-sidebar .nav-header{
+  padding: 1rem 0 0 1rem;
+}
+.detailBoxxxxx{
+
+}
+.detailBoxxxxx .box2{
+  text-align: center;
+  background-color: #f8f5fa;
+  border-radius: .5rem;
+  line-height: 1.2;
+  padding: .5rem 0;
+  font-size: .8rem;
+  cursor: pointer;
+  border: 1px solid #8d5db2;
+}
+.detailBoxxxxx .box2 .tnum{
+  font-size: 1.2rem;
 }

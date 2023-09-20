@@ -1,5 +1,7 @@
 let table_option_backlog;
 let table_option_v2;
+let table_option_v3;
+
 
 function setTable_DataTable(tablename) {
     $(`#table-${tablename} thead tr`).clone(true).addClass('filters').appendTo(`#table-${tablename} thead`);
@@ -185,6 +187,84 @@ function setTable_DataTableV2(tablename) {
     // console.log($(`.sorting.sorting_asc`))
     $(`.sorting.sorting_asc`).click()
 }
+function setTable_DataTableV3(tablename) {
+    $(`#table-${tablename} thead tr`).clone(true).addClass('filters').appendTo(`#table-${tablename} thead`);
+    table_option_v3 = $(`#table-${tablename}`).DataTable({
+        dom: 'Bfrtip',
+        searching: false,
+        buttons: [
+            'csv', 'excel'
+        ],
+        responsive: true,
+        // "scrollY": "500px",
+        // "scrollCollapse": true,
+        order: [
+            [0, 'asc']
+        ],
+        "paging": true,
+        "scrollX": true,
+        "pageLength": 15,
+        "lengthMenu": [
+            [15, 25, 50, -1],
+            [15, 25, 50, "All"]
+        ],
+        orderCellsTop: true,
+        fixedHeader: true,
+        initComplete: function() {
+            table_api = this.api();
+            table_api
+                .columns()
+                .eq(0)
+                .each(function(colIdx) {
+                    var cell = $('.filters th').eq(
+                        $(table_api.column(colIdx).header()).index()
+                    );
+                    var title = $(cell).text();
+                    $(cell).html('<input type="text" placeholder="' + title + '" />');
+                    $(
+                            'input',
+                            $('.filters th').eq($(table_api.column(colIdx).header()).index())
+                        )
+                        .off('keyup change')
+                        .on('change', function(e) {
+                            // Get the search value
+                            $(this).attr('title', $(this).val());
+                            var regexr = '({search})'; //$(this).parents('th').find('select').val();
+                            var cursorPosition = this.selectionStart;
+                            table_api
+                                .column(colIdx)
+                                .search(
+                                    this.value != '' ?
+                                    regexr.replace('{search}', '(((' + this.value + ')))') :
+                                    '',
+                                    this.value != '',
+                                    this.value == ''
+                                )
+                                .draw();
+                        })
+                        .on('keyup', function(e) {
+                            e.stopPropagation();
+                            $(this).trigger('change');
+                            // $(this)
+                            //     .focus()[0]
+                            //     .setSelectionRange(cursorPosition, cursorPosition);
+                        });
+                });
+        },
+        select: false,
+        // select: {
+        //     toggleable: false
+        // }
+        select: {
+            items: 'rows',
+            info: false
+        }
+    });
+
+    // Find(`.sorting.sorting_asc`)
+    // console.log($(`.sorting.sorting_asc`))
+    $(`.sorting.sorting_asc`).click()
+}
 function setTable_DataTableForUserSTD(tablename) {
     $(`#table-${tablename} thead tr`).clone(true).addClass('filters').appendTo(`#table-${tablename} thead`);
     table_option_v2 = $(`#table-${tablename}`).DataTable({
@@ -196,6 +276,91 @@ function setTable_DataTableForUserSTD(tablename) {
                 action: function ( e, dt, node, config ) {
                     var data = dt.buttons.exportData();
                     openModalPreviewCardUserSTD(data);
+                //    console.log(data );
+                }
+            }
+        ],
+        responsive: true,
+        // "scrollY": "500px",
+        // "scrollCollapse": true,
+        order: [
+            [0, 'asc']
+        ],
+        "paging": true,
+        "scrollX": true,
+        "pageLength": 15,
+        "lengthMenu": [
+            [15, 25, 50, -1],
+            [15, 25, 50, "All"]
+        ],
+        orderCellsTop: true,
+        fixedHeader: true,
+        initComplete: function() {
+            table_api = this.api();
+            table_api
+                .columns()
+                .eq(0)
+                .each(function(colIdx) {
+                    var cell = $('.filters th').eq(
+                        $(table_api.column(colIdx).header()).index()
+                    );
+                    var title = $(cell).text();
+                    $(cell).html('<input type="text" placeholder="' + title + '" />');
+                    $(
+                            'input',
+                            $('.filters th').eq($(table_api.column(colIdx).header()).index())
+                        )
+                        .off('keyup change')
+                        .on('change', function(e) {
+                            // Get the search value
+                            $(this).attr('title', $(this).val());
+                            var regexr = '({search})'; //$(this).parents('th').find('select').val();
+                            var cursorPosition = this.selectionStart;
+                            table_api
+                                .column(colIdx)
+                                .search(
+                                    this.value != '' ?
+                                    regexr.replace('{search}', '(((' + this.value + ')))') :
+                                    '',
+                                    this.value != '',
+                                    this.value == ''
+                                )
+                                .draw();
+                        })
+                        .on('keyup', function(e) {
+                            e.stopPropagation();
+                            $(this).trigger('change');
+                            // $(this)
+                            //     .focus()[0]
+                            //     .setSelectionRange(cursorPosition, cursorPosition);
+                        });
+                });
+        },
+        select: true,
+        // select: {
+        //     toggleable: false
+        // }
+        // select: {
+        //     items: 'rows',
+        //     info: false
+        // }
+    });
+
+    // Find(`.sorting.sorting_asc`)
+    // console.log($(`.sorting.sorting_asc`))
+    $(`.sorting.sorting_asc`).click()
+}
+function setTable_DataTableForBook(tablename) {
+    $(`#table-${tablename} thead tr`).clone(true).addClass('filters').appendTo(`#table-${tablename} thead`);
+    table_option_v2 = $(`#table-${tablename}`).DataTable({
+        dom: 'Bfrtip',
+        searching: true,
+        buttons: [
+            'csv', 'excel',{
+                text: 'พิมพ์ Barcode',
+                action: function ( e, dt, node, config ) {
+                    var data = dt.buttons.exportData();
+                    openModalPreviewCardBook(data);
                 //    console.log(data );
                 }
             }

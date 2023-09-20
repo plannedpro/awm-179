@@ -139,7 +139,7 @@ function checkin($type,$dataAPI,$dataoption){
     $data=array();
 
     if($type=='checkin'){
-        $users = findDataUserBySID($dataAPI['sid']);
+        $users = findDataUserBySIDActiveOnly($dataAPI['sid']);
         foreach($users as $std){
             insertSQL('lib_checkin','checkin_school,checkin_user,checkin_time',array($std['school_id'],$std['user_id'],$dateNow));
             array_push($data,$std);
@@ -161,8 +161,15 @@ function findDataUserBySID($SID){
     left join lib_yearStudy as years on users.user_year=years.year_id
     where users.user_sid=? order by users.user_sid limit 1
     ',array($SID));
-
     return $users;
+}
+function findDataUserBySIDActiveOnly($SID){
+  $users =  getDataSQLv1(1,'SELECT * FROM lib_users  as users
+  left join lib_school as school on users.user_school=school.school_id
+  left join lib_yearStudy as years on users.user_year=years.year_id
+  where users.user_sid=? and users.user_status=1 order by users.user_sid limit 1
+  ',array($SID));
+  return $users;
 }
 
 
@@ -176,7 +183,7 @@ function getdataUser($type,$dataAPI,$dataoption){
     $searchSomething=' ';
     if($dataAPI['search']!=''){
       $search = "%".$dataAPI['search']."%";
-      $searchSomething = " where (user_sid like '".$search."'";
+      $searchSomething = " where (user_sid = '".$dataAPI['search']."'";
       $searchSomething .= " OR user_fname like '".$search."'";
       $searchSomething .= " OR user_lname like '".$search."'";
       $searchSomething .= " OR user_nickname like '".$search."'";
@@ -233,9 +240,16 @@ function manageDataBook($type,$dataAPI,$dataoption){
     $group =  getDataSQLv1(1,'SELECT * FROM lib_book_group where group_status=1 order by group_name asc',array());
     array_push($data,array('shelf'=>$shelf,'group'=>$group));
   }else if($type=='listshow'){
+    $searchSomething=' ';
+    if($dataAPI['search']!=''){
+      $searchSomething = " WHERE (book.book_barcode = '".$dataAPI['search']."') ";
+    }
+
+
     $books =  getDataSQLv1(1,'SELECT * FROM lib_book as book
     left join lib_book_shelf as shelf on shelf.shelf_id=book.book_shelf_id
     left join lib_book_group as g on g.group_id=book.book_group_id
+    '.$searchSomething.'
     order by book.book_name asc',array());
     foreach($books AS $book){
       array_push($data,$book);
@@ -246,9 +260,125 @@ function manageDataBook($type,$dataAPI,$dataoption){
     left join lib_book_group as g on g.group_id=book.book_group_id
     where book.book_id=?
     order by book.book_name asc',array($dataAPI['id']));
+  }else if($type=='chackbarcode'){
+    $data =  getDataSQLv1(1,'SELECT * FROM lib_book as book
+    left join lib_book_shelf as shelf on shelf.shelf_id=book.book_shelf_id
+    left join lib_book_group as g on g.group_id=book.book_group_id
+    where book.book_barcode=?
+    order by book.book_name asc',array($dataAPI['barcode']));
   }
   return setDataReturn($codeReturn,$data);
 }
 
+function MasterCheckin($type,$dataAPI,$dataoption){
+  global $dateNow,$browser,$codeReturn;
+  $school =1;
+  $data=array();
+  if($type=='logCheckIn'){
+    $searchSomething=' ';
+    if($dataAPI['search']!=''){
+      // $search = "%".$dataAPI['search']."%";
+      $searchSomething = " AND (user_sid = '".$dataAPI['search']."') ";
+      // $searchSomething .= " OR user_fname like '".$search."'";
+      // $searchSomething .= " OR user_lname like '".$search."'";
+      // $searchSomething .= " OR user_nickname like '".$search."'";
+      // $searchSomething .= " OR years.year_digit like '".$search."'";
+
+
+      // $searchSomething .= " )";
+
+    }
+
+    $last30 = getDataSQLv1(1,'SELECT DATE_FORMAT(checkin_time, "%Y-%m-%d") as DD,count(DISTINCT `checkin_user`) as num
+    FROM lib_checkin 
+    left join lib_users as users on lib_checkin.checkin_user = users.user_id
+    where checkin_status=1 and (checkin_time between ? AND ?) '.$searchSomething.' group BY DATE_FORMAT(checkin_time, "%Y-%m-%d")
+     ',array($dataAPI['start'],$dataAPI['end']));
+
+    $joinser = getDataSQLv1(1,'SELECT DATE_FORMAT(checkin_time, "%Y-%m-%d") as DD,count(`checkin_user`) as num,
+    user_fname,user_lname,user_prefix,user_sid,user_type
+    FROM lib_checkin 
+    left join lib_users on lib_checkin.checkin_user = lib_users.user_id
+    where checkin_status=1 and (checkin_time between ? AND ?) '.$searchSomething.' group BY DATE_FORMAT(checkin_time, "%Y-%m-%d"),
+    user_fname,user_lname,user_prefix,user_sid,user_type
+    order by DATE_FORMAT(checkin_time, "%Y-%m-%d") desc,count(`checkin_user`) desc
+    ',array($dataAPI['start'],$dataAPI['end']));
+
+
+    $detail = getDataSQLv1(1,'SELECT * FROM lib_checkin 
+    left join lib_users as users on lib_checkin.checkin_user = users.user_id
+    left join lib_school as school on users.user_school=school.school_id
+    left join lib_yearStudy as years on users.user_year=years.year_id
+    where checkin_status=1 and (checkin_time between ? AND ?) '.$searchSomething,array($dataAPI['start'],$dataAPI['end']));
+
+
+     array_push($data,array('last30'=>$last30,'logs'=>$joinser,'detail'=>$detail));
+
+  }
+  return setDataReturn($codeReturn,$data);
+}
+
+
+function MasterBorrow($type,$dataAPI,$dataoption){
+  global $dateNow,$browser,$codeReturn;
+  $school =1;
+  $Admin = $_SESSION["id-user-master"];
+  $data=array();
+  if($type=='checkBarcodeSID_ForBorrow'){
+    $datauser =  getDataSQLv1(1,'SELECT * FROM lib_users  as users
+    left join lib_school as school on users.user_school=school.school_id
+    left join lib_yearStudy as years on users.user_year=years.year_id
+    where users.user_sid=?
+    order by users.user_sid limit 1',array($dataAPI['sid']));
+    foreach($datauser AS $user){
+      $user['checkin'] = getDataSQLv1(1,'SELECT checkin_time FROM lib_checkin 
+      where checkin_status=1 and checkin_user=? and year(checkin_time)=year(CURDATE())',array($user['user_id']));
+      array_push($data,$user);
+    }
+  }else if($type=='checkBarcodeBook_forBorrow'){
+    $dataBook =  getDataSQLv1(1,'SELECT * FROM lib_book as book
+    left join lib_book_shelf as shelf on shelf.shelf_id=book.book_shelf_id
+    left join lib_book_group as g on g.group_id=book.book_group_id
+    where book.book_barcode=?
+    order by book.book_name asc',array($dataAPI['barcode']));
+    foreach($dataBook AS $book){
+
+      array_push($data,$book);
+    }
+  }else if($type=='confirmBorrow'){
+    $dataAPI = json_decode($dataAPI);
+    $borrow_no = genRanningNo();
+    $token = new_token(6);
+    insertSQL('lib_borrow',
+    'borrow_no,borrow_token,borrow_user_id,borrow_create_doc,borrow_create_by,borrow_startdate,borrow_duedate,borrow_status',
+    array($borrow_no,$token,$dataAPI->user,$dateNow,$Admin,$dataAPI->dateStart,$dataAPI->dueDate,1));
+    $borrows = getDataSQLv1(1,'SELECT  * FROM  lib_borrow  WHERE borrow_no = ? and borrow_token=?',array($borrow_no,$token));
+    foreach($borrows AS $borrow){
+      foreach($dataAPI->arrBookClipboard AS $book){
+        insertSQL('lib_borrow_book','bb_borrow_id,bb_book_id',array($borrow['borrow_id'],$book));
+      }
+      array_push($data,$borrow);
+    }
+    // array_push($data,$borrow_no);
+  }
+  return setDataReturn($codeReturn,$data);
+}
+
+function genRanningNo(){
+  $NowYear = date('y');
+  $NowMonth = date('m');
+  $search = $NowYear.$NowMonth."%";
+  $assign_work = getDataSQLv1(1,'SELECT * FROM  lib_borrow  WHERE borrow_no LIKE ? ORDER BY borrow_no DESC limit 1',array($search));
+  if(count($assign_work)>0){
+    $DocNoLast = $assign_work[0]['borrow_no'];
+    $last = substr($DocNoLast,-4);
+    $last+=1;
+  }else{
+    $last=1;
+  }
+  $new=sprintf("%04d",$last);
+  $return = $NowYear.$NowMonth.$new;
+  return $return;
+}
 
 ?>

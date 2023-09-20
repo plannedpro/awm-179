@@ -49,8 +49,8 @@ if(isset($_FILES['files'])){
         if($userId_profile=='null.png'){
           $userId_profile = $book['book_cover'];
         }
-        $update = updateSQL('lib_book','book_isbn=?,book_ref=?,book_barcode=?,book_name=?,book_year=?,book_shelf_id=?,book_group_id=?,book_num=?,book_cover=?',
-        'book_id=?', array($_POST['book_barcode'],$_POST['book_ref'],$_POST['book_barcode'],$_POST['book_name'],$_POST['book_year'],$_POST['book_shelf_id'],$_POST['book_group_id'],$_POST['book_num'],$userId_profile,$userId));
+        $update = updateSQL('lib_book','book_isbn=?,book_ref=?,book_barcode=?,book_name=?,book_year=?,book_shelf_id=?,book_group_id=?,book_num=?,book_cover=?,book_status=?',
+        'book_id=?', array($_POST['book_barcode'],$_POST['book_ref'],$_POST['book_barcode'],$_POST['book_name'],$_POST['book_year'],$_POST['book_shelf_id'],$_POST['book_group_id'],$_POST['book_num'],$userId_profile,$_POST['book_status'],$userId));
 
 
     }
@@ -74,7 +74,7 @@ if(isset($_FILES['files'])){
     //insert
 
       insertSQL('lib_book','book_school,book_isbn,book_ref,book_barcode,book_name,book_year,book_shelf_id,book_group_id,book_num,book_cover,book_lastupdate,book_status'
-      ,array($school,$_POST['book_barcode'],$_POST['book_ref'],$_POST['book_barcode'],$_POST['book_name'],$_POST['book_year'],$_POST['book_shelf_id'],$_POST['book_group_id'],$_POST['book_num'],$userId_profile,$dateNow,1));
+      ,array($school,$_POST['book_barcode'],$_POST['book_ref'],$_POST['book_barcode'],$_POST['book_name'],$_POST['book_year'],$_POST['book_shelf_id'],$_POST['book_group_id'],$_POST['book_num'],$userId_profile,$dateNow,$_POST['book_status']));
       $dataReturn = array('status'=>1,'code'=>$_POST['book_barcode']);
   }
 

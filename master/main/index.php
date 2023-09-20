@@ -75,6 +75,11 @@ getDataSettingAllToSession();
    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
    <link href="../../include/css/semantic.css?v=2.3" rel="stylesheet" />
    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script> -->
+
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="include/js/moment-timezone.js"></script>
+
+    
    <script type="text/javascript" src="include/js/main_.js?v=2.3"></script>
 
    <script src="include/js/paginator.js?v=2.3" type="text/javascript"></script>
@@ -137,6 +142,11 @@ getDataSettingAllToSession();
       <link href="./include/css/daterangepicker.css" rel="stylesheet" />
     <script type="text/javascript" src="include/js/daterangepicker.min.js" ></script>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts@latest/dist/apexcharts.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/apexcharts@latest/dist/apexcharts.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script type="text/javascript" src="include/js/customFunctions.js" ></script>
 
 
@@ -267,7 +277,16 @@ getDataSettingAllToSession();
             include_once('include/page/user/main.php');
          }else if($page=='managebook'){
             include_once('include/page/book/manage.php');
-
+         }else if($page=='checkinreport'){
+            include_once('include/page/checkin/report.php');
+         }else if($page=='borrow'){
+            include_once('include/page/book/borrow.php');
+         }else if($page=='return'){
+            include_once('include/page/book/return.php');
+         }else if($page=='history'){
+            include_once('include/page/book/history.php');
+         }else if($page=='pending'){
+            include_once('include/page/book/pending.php');
          } else {
             include_once('include/page/page-notfound-404.php');
          }
