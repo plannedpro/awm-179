@@ -266,6 +266,56 @@ function manageDataBook($type,$dataAPI,$dataoption){
     left join lib_book_group as g on g.group_id=book.book_group_id
     where book.book_barcode=?
     order by book.book_name asc',array($dataAPI['barcode']));
+  }else if($type=='manageGroup_showAll'){
+    $data = getDataSQLv1(1,'SELECT count(DISTINCT `book_barcode`) as num, g.group_name
+    ,g.group_remark,g.group_status,group_id
+    FROM lib_book_group  as g
+    left join lib_book as book on book.book_group_id = g.group_id
+    where (book.book_status=1 OR book.book_status is null) group BY 
+    g.group_name,group_id
+    ,g.group_remark,g.group_status order by g.group_name asc',array());
+  }else if($type=='manageGroup_showByID'){
+    $data = getDataSQLv1(1,'SELECT * FROM lib_book_group where group_id=?',array($dataAPI['id']));
+  }else if($type=='manageGroup_save'){
+    if($dataAPI['id']!=0){
+      $dataGroup = getDataSQLv1(1,'SELECT * FROM lib_book_group where group_id=?',array($dataAPI['id']));
+      if(count($dataGroup)>0){
+        // update
+        updateSQL('lib_book_group','group_name=?,group_remark=?','group_id=?',array($dataAPI['name'],$dataAPI['remark'],$dataAPI['id']));
+      }else{
+        //insert
+        insertSQL('lib_book_group','group_name,group_remark,group_school,group_status',array($dataAPI['name'],$dataAPI['remark'],$school,1));
+      }
+    }else{
+      // insert
+      insertSQL('lib_book_group','group_name,group_remark,group_school,group_status',array($dataAPI['name'],$dataAPI['remark'],$school,1));
+    }
+    array_push($data,$dataAPI);
+  }else if($type=='manageShelf_showAll'){
+    $data = getDataSQLv1(1,'SELECT count(DISTINCT `book_barcode`) as num, g.shelf_code
+    ,g.shelf_remark,g.shelf_status,shelf_id
+    FROM lib_book_shelf  as g
+    left join lib_book as book on book.book_shelf_id = g.shelf_id
+    where (book.book_status=1 OR book.book_status is null) group BY 
+    g.shelf_code,shelf_id
+    ,g.shelf_remark,g.shelf_status order by g.shelf_code asc',array());
+  }else if($type=='manageShelf_showByID'){
+    $data = getDataSQLv1(1,'SELECT * FROM lib_book_shelf where shelf_id=?',array($dataAPI['id']));
+  }else if($type=='manageShelf_save'){
+    if($dataAPI['id']!=0){
+      $dataGroup = getDataSQLv1(1,'SELECT * FROM lib_book_shelf where shelf_id=?',array($dataAPI['id']));
+      if(count($dataGroup)>0){
+        // update
+        updateSQL('lib_book_shelf','shelf_code=?,shelf_remark=?','shelf_id=?',array($dataAPI['name'],$dataAPI['remark'],$dataAPI['id']));
+      }else{
+        //insert
+        insertSQL('lib_book_shelf','shelf_code,shelf_remark,shelf_school,shelf_status',array($dataAPI['name'],$dataAPI['remark'],$school,1));
+      }
+    }else{
+      // insert
+      insertSQL('lib_book_shelf','shelf_code,shelf_remark,shelf_school,shelf_status',array($dataAPI['name'],$dataAPI['remark'],$school,1));
+    }
+    array_push($data,$dataAPI);
   }
   return setDataReturn($codeReturn,$data);
 }
@@ -332,7 +382,14 @@ function MasterBorrow($type,$dataAPI,$dataoption){
     order by users.user_sid limit 1',array($dataAPI['sid']));
     foreach($datauser AS $user){
       $user['checkin'] = getDataSQLv1(1,'SELECT checkin_time FROM lib_checkin 
-      where checkin_status=1 and checkin_user=? and year(checkin_time)=year(CURDATE())',array($user['user_id']));
+      where checkin_status=1 and checkin_user=? and year(checkin_time)=year(CURDATE()) and month(checkin_time)=month(CURDATE())',array($user['user_id']));
+      
+      $user['borrow'] =  getDataSQLv1(1,'SELECT * FROM lib_borrow as borrow 
+      left join lib_borrow_book as bbook on bbook.bb_borrow_id=borrow.borrow_id
+      left join lib_book as book on bbook.bb_book_id=book.book_id
+      where borrow.borrow_user_id=?',array($user['user_id']));
+      
+      
       array_push($data,$user);
     }
   }else if($type=='checkBarcodeBook_forBorrow'){
@@ -360,6 +417,186 @@ function MasterBorrow($type,$dataAPI,$dataoption){
       array_push($data,$borrow);
     }
     // array_push($data,$borrow_no);
+  }else if($type=='checkBarcodeSID_ForReturn'){
+    $dataBook =  getDataSQLv1(1,'SELECT * FROM lib_borrow as borrow 
+    left join lib_borrow_book as bbook on bbook.bb_borrow_id=borrow.borrow_id
+    left join lib_book as book on bbook.bb_book_id=book.book_id
+    left join lib_users  as users on users.user_id=borrow.borrow_user_id
+    left join lib_book_shelf as shelf on shelf.shelf_id=book.book_shelf_id
+    left join lib_book_group as g on g.group_id=book.book_group_id
+    where book.book_barcode=? AND bbook.bb_status=1
+    order by book.book_name asc',array($dataAPI['book']));
+    foreach($dataBook AS $book){
+
+      array_push($data,$book);
+    }
+  }else if($type=='confirmReceive'){
+    $dataBook =  getDataSQLv1(1,'SELECT * FROM lib_borrow as borrow 
+    left join lib_borrow_book as bbook on bbook.bb_borrow_id=borrow.borrow_id
+    left join lib_book as book on bbook.bb_book_id=book.book_id
+    left join lib_users  as users on users.user_id=borrow.borrow_user_id
+    left join lib_book_shelf as shelf on shelf.shelf_id=book.book_shelf_id
+    left join lib_book_group as g on g.group_id=book.book_group_id
+    where book.book_barcode=? AND bbook.bb_id=? AND bbook.bb_status=1
+    order by book.book_name asc',array($dataAPI['book'],$dataAPI['bb_id']));
+    foreach($dataBook AS $book){
+      updateSQL('lib_borrow_book','bb_return=?,bb_received=?,bb_status=?','bb_id=?',array($dateNow,$Admin,2,$book['bb_id']));
+      array_push($data,$book);
+    }
+  }else if($type=='getDataHistoryBorrow'){
+    $searchBy=$dataAPI['searchBy'];
+    $search=$dataAPI['search'];
+    $conditionsSearch = '';
+    if($search!=''){
+      if($searchBy==1){
+      $conditionsSearch = " AND users.user_sid ='".$search."' ";
+      }else if($searchBy==2){
+        $conditionsSearch = " AND book.book_barcode ='".$search."' ";
+      }
+    }
+    if($dataAPI['status1']==1){
+      $conditionsSearch .= " AND bbook.bb_status=1 ";
+    }else {
+      $conditionsSearch .= " AND (bbook.bb_status=1  OR bbook.bb_status=2) ";
+    }
+    $dataBook =  getDataSQLv1(1,'SELECT 
+    count(bbook.bb_borrow_id) as num
+    ,DATEDIFF(borrow.borrow_duedate,borrow.borrow_startdate) as datediff
+    ,borrow.borrow_no
+    ,borrow.borrow_create_doc
+    ,borrow.borrow_startdate
+    ,borrow.borrow_duedate
+    ,users.user_fname
+    ,users.user_lname
+    ,users.user_prefix
+    ,users.user_sid
+    ,users.user_profile
+    ,users.user_type
+    ,users.user_class
+    FROM lib_borrow as borrow 
+    left join lib_borrow_book as bbook on bbook.bb_borrow_id=borrow.borrow_id
+    left join lib_book as book on bbook.bb_book_id=book.book_id
+    left join lib_users  as users on users.user_id=borrow.borrow_user_id
+    where (bbook.bb_status!=0) '.$conditionsSearch.'
+    group by borrow.borrow_no
+    ,borrow.borrow_create_doc
+    ,borrow.borrow_startdate
+    ,borrow.borrow_duedate
+    ,users.user_fname
+    ,users.user_lname
+    ,users.user_prefix
+    ,users.user_sid
+    ,users.user_profile
+    ,users.user_type
+    ,users.user_class
+    order by borrow.borrow_no desc',array());
+    foreach($dataBook AS $book){
+      $book['pending'] =  getDataSQLv1(1,'SELECT bbook.bb_id FROM lib_borrow as borrow 
+      left join lib_borrow_book as bbook on bbook.bb_borrow_id=borrow.borrow_id
+      where borrow.borrow_no=? AND bbook.bb_status=1 ',array($book['borrow_no']));
+      array_push($data,$book);
+    }
+  }else if($type=='getDataHistoryBorrow_ByBorrowNo'){
+    $dataBook =  getDataSQLv1(1,'SELECT * FROM lib_borrow as borrow 
+    left join lib_users  as users on users.user_id=borrow.borrow_user_id
+    left join lib_school as school on users.user_school=school.school_id
+    left join lib_yearStudy as years on users.user_year=years.year_id
+    left join master_account as ad on ad.MasterId=borrow.borrow_create_by
+    where borrow.borrow_no=?',array($dataAPI['borrow_no']));
+
+    
+    // $dataBook =  getDataSQLv1(1,'SELECT * FROM lib_borrow as borrow 
+    // left join lib_borrow_book as bbook on bbook.bb_borrow_id=borrow.borrow_id
+    // left join lib_book as book on bbook.bb_book_id=book.book_id
+    // left join lib_users  as users on users.user_id=borrow.borrow_user_id
+    // left join lib_book_shelf as shelf on shelf.shelf_id=book.book_shelf_id
+    // left join lib_book_group as g on g.group_id=book.book_group_id
+    // left join lib_school as school on users.user_school=school.school_id
+    // left join lib_yearStudy as years on users.user_year=years.year_id
+    // where borrow.borrow_no=? order by book.book_name asc',array($dataAPI['borrow_no']));
+    foreach($dataBook AS $book){
+      $book['borrow'] =  getDataSQLv1(1,'SELECT * FROM lib_borrow_book as bbook 
+      left join lib_book as book on bbook.bb_book_id=book.book_id
+      left join lib_book_shelf as shelf on shelf.shelf_id=book.book_shelf_id
+      left join lib_book_group as g on g.group_id=book.book_group_id
+      left join master_account as ad on ad.MasterId=bbook.bb_received
+      where bbook.bb_borrow_id=?',array($book['borrow_id']));
+
+      // $book['admin'] =  getDataSQLv1(1,'SELECT * FROM lib_users  as users where bbook.bb_borrow_id=?',array($book['borrow_id']));
+      // updateSQL('lib_borrow_book','bb_return=?,bb_received=?,bb_status=?','bb_id=?',array($dateNow,$Admin,2,$book['bb_id']));
+      array_push($data,$book);
+    }
+  }else if($type=='historyByUserIdAndStatusShow'){
+    $conditionType = '';
+    if($dataAPI['type']==1){
+      // ทั้งหมด
+     
+    }else if($dataAPI['type']==2){
+      // คืนแล้ว
+      $conditionType = " AND bbook.bb_status=2 ";
+    }else if($dataAPI['type']==3){
+      // รอคืน
+      $conditionType = " AND bbook.bb_status=1 ";
+    }
+    $borrows = getDataSQLv1(1,'SELECT * FROM lib_borrow_book as bbook 
+    left join lib_borrow as borrow on bbook.bb_borrow_id=borrow.borrow_id
+    left join lib_book as book on bbook.bb_book_id=book.book_id
+    left join lib_users  as users on users.user_id=borrow.borrow_user_id
+    left join lib_book_shelf as shelf on shelf.shelf_id=book.book_shelf_id
+    left join lib_book_group as g on g.group_id=book.book_group_id
+    left join master_account as ad on ad.MasterId=bbook.bb_received
+    where users.user_sid=? '.$conditionType,array($dataAPI['user_sid']));
+    foreach($borrows AS $borrow){
+      
+      array_push($data,$borrow);
+    }
+
+  }else if($type=='getDataHistoryBorrowByDate'){
+
+    $search=$dataAPI['search'];
+    
+    $conditionsSearch = " AND DATE_FORMAT(borrow_create_doc, \"%Y-%m-%d\")='".$dataAPI['date']."'";
+    if($search!=''){
+      $conditionsSearch .= " AND users.user_sid ='".$search."' ";
+    }
+    
+    $dataBook =  getDataSQLv1(1,'SELECT 
+    count(bbook.bb_borrow_id) as num
+    ,DATEDIFF(borrow.borrow_duedate,borrow.borrow_startdate) as datediff
+    ,borrow.borrow_no
+    ,borrow.borrow_create_doc
+    ,borrow.borrow_startdate
+    ,borrow.borrow_duedate
+    ,users.user_fname
+    ,users.user_lname
+    ,users.user_prefix
+    ,users.user_sid
+    ,users.user_profile
+    ,users.user_type
+    ,users.user_class
+    FROM lib_borrow as borrow 
+    left join lib_borrow_book as bbook on bbook.bb_borrow_id=borrow.borrow_id
+    left join lib_book as book on bbook.bb_book_id=book.book_id
+    left join lib_users  as users on users.user_id=borrow.borrow_user_id
+    where (bbook.bb_status!=0) '.$conditionsSearch.'
+    group by borrow.borrow_no
+    ,borrow.borrow_create_doc
+    ,borrow.borrow_startdate
+    ,borrow.borrow_duedate
+    ,users.user_fname
+    ,users.user_lname
+    ,users.user_prefix
+    ,users.user_sid
+    ,users.user_profile
+    ,users.user_type
+    ,users.user_class
+    order by borrow.borrow_no desc',array());
+    foreach($dataBook AS $book){
+      $book['pending'] =  getDataSQLv1(1,'SELECT bbook.bb_id FROM lib_borrow as borrow 
+      left join lib_borrow_book as bbook on bbook.bb_borrow_id=borrow.borrow_id
+      where borrow.borrow_no=? AND bbook.bb_status=1 ',array($book['borrow_no']));
+      array_push($data,$book);
+    }
   }
   return setDataReturn($codeReturn,$data);
 }
@@ -381,4 +618,53 @@ function genRanningNo(){
   return $return;
 }
 
+
+function MasterDashboard($type,$dataAPI,$dataoption){
+  global $dateNow,$browser,$codeReturn;
+  $school =1;
+  $Admin = $_SESSION["id-user-master"];
+  $data=array();
+  if($type=='all'){
+    $logBorrow = getDataSQLv1(1,'SELECT
+    DATE_FORMAT(borrow_create_doc, "%Y-%m-%d") as DD,count(`borrow_id`) as num 
+    FROM  lib_borrow  
+    WHERE borrow_status=1  AND (borrow_create_doc BETWEEN ? AND ?)
+    group by DATE_FORMAT(borrow_create_doc, "%Y-%m-%d")
+    ',array($dataAPI['start'],$dataAPI['end']));
+
+    $pending = getDataSQLv1(1,'SELECT * FROM lib_borrow_book as bbook 
+    left join lib_borrow as borrow on bbook.bb_borrow_id=borrow.borrow_id
+    left join lib_book as book on bbook.bb_book_id=book.book_id
+    left join lib_users  as users on users.user_id=borrow.borrow_user_id
+    left join lib_book_shelf as shelf on shelf.shelf_id=book.book_shelf_id
+    left join lib_book_group as g on g.group_id=book.book_group_id
+    left join master_account as ad on ad.MasterId=bbook.bb_received
+    where bbook.bb_status=1',array());
+
+    $top5Book = getDataSQLv1(1,'SELECT count(`borrow_id`) as num,book_name,group_name FROM lib_borrow_book as bbook 
+    left join lib_borrow as borrow on bbook.bb_borrow_id=borrow.borrow_id
+    left join lib_book as book on bbook.bb_book_id=book.book_id
+    left join lib_book_group as g on g.group_id=book.book_group_id
+    where (borrow_create_doc BETWEEN ? AND ?) group by book_name,group_name order by count(`borrow_id`) desc limit 5 ',array($dataAPI['start'],$dataAPI['end']));
+
+    $top5User = getDataSQLv1(1,'SELECT count(`borrow_user_id`) as num,user_fname,user_lname,user_type,user_class,user_sid FROM lib_borrow as borrow 
+    left join lib_users  as users on users.user_id=borrow.borrow_user_id
+    where (borrow_create_doc BETWEEN ? AND ?) group by user_fname,user_lname,user_type,user_class,user_sid order by count(`borrow_user_id`) desc limit 5 ',array($dataAPI['start'],$dataAPI['end']));
+
+
+    $UserClass = getDataSQLv1(1,'SELECT count(`borrow_user_id`) as num,user_class FROM lib_borrow as borrow 
+    left join lib_users  as users on users.user_id=borrow.borrow_user_id
+    where (borrow_create_doc BETWEEN ? AND ?) AND user_class!=0 group by user_class order by count(`borrow_user_id`)',array($dataAPI['start'],$dataAPI['end']));
+
+    $byBookGroup= getDataSQLv1(1,'SELECT count(`borrow_id`) as num,group_name FROM lib_borrow_book as bbook 
+    left join lib_borrow as borrow on bbook.bb_borrow_id=borrow.borrow_id
+    left join lib_book as book on bbook.bb_book_id=book.book_id
+    left join lib_book_group as g on g.group_id=book.book_group_id
+    where (borrow_create_doc BETWEEN ? AND ?) group by group_name order by count(`borrow_id`) desc limit 10 ',array($dataAPI['start'],$dataAPI['end']));
+
+
+    $data = array('logBorrow'=>$logBorrow,'pending'=>$pending,'top5book'=>$top5Book,'top5user'=>$top5User,'userClass'=>$UserClass,'byBookGroup'=>$byBookGroup );
+  }
+  return setDataReturn($codeReturn,$data);
+}
 ?>

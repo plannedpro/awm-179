@@ -380,7 +380,7 @@ html {
 
 label:not(.form-check-label):not(.custom-file-label) {
     font-weight: 400;
-    color: #b2b2b2;
+    color: #838383;
     margin-bottom: .2rem;
 }
 

@@ -54,6 +54,7 @@ $versionScript = 1;
     <script src="https://cdn.jsdelivr.net/npm/moment@latest"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/daterangepicker@latest"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script type="text/javascript" src="<?=BASEPATH?>include/js/moment-timezone.js"></script>
     <!-- Favicons -->
     <!-- <link href="<?=BASEPATH?>assets/img/favicon.png" rel="icon">
     <link href="<?=BASEPATH?>assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->

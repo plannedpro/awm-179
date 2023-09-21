@@ -131,3 +131,12 @@ $(window).ready(() => {
         </div>
     </div>
 </section> -->
+
+<audio id="sound-borrow_step1" src="../../include/sound/borrow_step1.mp3"></audio>
+<audio id="sound-borrow_step2" src="../../include/sound/borrow_step2.mp3"></audio>
+<audio id="sound-borrow_step3" src="../../include/sound/borrow_step3.mp3"></audio>
+<audio id="sound-borrow_step31" src="../../include/sound/borrow_step31.mp3"></audio>
+<audio id="sound-borrow_step4" src="../../include/sound/borrow_step4.mp3"></audio>
+<audio id="sound-borrow_step5" src="../../include/sound/borrow_step5.mp3"></audio>
+<audio id="sound-notfound" src="../../include/sound/notfound.mp3"></audio>
+

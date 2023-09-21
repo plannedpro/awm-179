@@ -1,11 +1,12 @@
 <script type="text/javascript">
 $(window).ready(() => {
     // getDataBookAll()
-    // $(`#search-history`).keyup(function(event) {
-    //     if (event.keyCode === 13) {
-    //         getDataBookAll();
-    //     }
-    // })
+    $(`#search-history`).keyup(function(event) {
+        if (event.keyCode === 13) {
+            getDataHistoryBorrow();
+        }
+    })
+    getDataHistoryBorrow();
     $('#search-history').focus();
 });
 </script>
@@ -20,10 +21,23 @@ $(window).ready(() => {
                 </small>
             </div>
             <div class="col-md-6 text-right">
-                <!-- <span onclick="AddDataBook(0)" class="badge badge-pill badge-success cursor-pointer">
-                <i class="fas fa-plus"></i> เพิ่มข้อมูลใหม่</span> -->
-                <span onclick="getDataBookAll()" class="badge badge-pill badge-secondary cursor-pointer"><i
-                        class="fas fa-sync-alt"></i> รีเฟรชข้อมูล</span>
+                <!-- <span onclick="getDataBookAll()" class="badge badge-pill badge-secondary cursor-pointer"><i
+                        class="fas fa-sync-alt"></i> รีเฟรชข้อมูล</span> -->
+               <div> 
+                <!-- <input type="checkbox" checked name="filterStatus" id="filterStatus_2">
+                <label for="filterStatus_2">คืนแล้ว</label> -->
+                <input type="checkbox" onchange="getDataHistoryBorrow()" name="filterStatus" id="filterStatus_1">
+                <label for="filterStatus_1">รอคืนเท่านั้น</label>
+            </div>
+
+
+            <div> 
+                <input type="radio" onclick="getDataHistoryBorrow()" checked name="typeSearch" id="typeSearch_sid">
+                <label for="typeSearch_sid">บัตรสมาชิก</label>
+                <input type="radio" onclick="getDataHistoryBorrow()"  name="typeSearch" id="typeSearch_barcode">
+                <label for="typeSearch_barcode">รหัสหนังสือ</label>
+            </div>
+            
                 <div class="ui icon input mini">
                     <input id="search-history" autocomplete="off" type="text" placeholder="Scan Barcode" />
                 </div>

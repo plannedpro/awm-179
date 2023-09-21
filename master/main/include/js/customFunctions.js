@@ -74,10 +74,11 @@ function setTable_DataTable(tablename) {
     // console.log($(`.sorting.sorting_asc`))
     $(`.sorting.sorting_asc`).click()
 }
+
 function setTable_DataTableNofilter(tablename) {
     // $(`#table-${tablename} thead tr`).clone(true).addClass('filters').appendTo(`#table-${tablename} thead`);
     // table_option_backlog?table_option_backlog='':null;
-    
+
     table_option_backlog = $(`#table-${tablename}`).DataTable({
         dom: 'Bfrtip',
         searching: true,
@@ -99,7 +100,7 @@ function setTable_DataTableNofilter(tablename) {
         ],
         orderCellsTop: true,
         fixedHeader: true,
-       
+
         select: true,
     });
 
@@ -123,6 +124,7 @@ function setTable_DataTableV2(tablename) {
         order: [
             [0, 'asc']
         ],
+
         "paging": true,
         "scrollX": true,
         "pageLength": 15,
@@ -130,6 +132,7 @@ function setTable_DataTableV2(tablename) {
             [15, 25, 50, -1],
             [15, 25, 50, "All"]
         ],
+
         orderCellsTop: true,
         fixedHeader: true,
         initComplete: function() {
@@ -177,6 +180,7 @@ function setTable_DataTableV2(tablename) {
         // select: {
         //     toggleable: false
         // }
+        bDestroy: true,
         select: {
             items: 'rows',
             info: false
@@ -187,6 +191,7 @@ function setTable_DataTableV2(tablename) {
     // console.log($(`.sorting.sorting_asc`))
     $(`.sorting.sorting_asc`).click()
 }
+
 function setTable_DataTableV3(tablename) {
     $(`#table-${tablename} thead tr`).clone(true).addClass('filters').appendTo(`#table-${tablename} thead`);
     table_option_v3 = $(`#table-${tablename}`).DataTable({
@@ -265,18 +270,19 @@ function setTable_DataTableV3(tablename) {
     // console.log($(`.sorting.sorting_asc`))
     $(`.sorting.sorting_asc`).click()
 }
+
 function setTable_DataTableForUserSTD(tablename) {
     $(`#table-${tablename} thead tr`).clone(true).addClass('filters').appendTo(`#table-${tablename} thead`);
     table_option_v2 = $(`#table-${tablename}`).DataTable({
         dom: 'Bfrtip',
         searching: true,
         buttons: [
-            'csv', 'excel',{
+            'csv', 'excel', {
                 text: 'พิมพ์บัตรสมาชิก',
-                action: function ( e, dt, node, config ) {
+                action: function(e, dt, node, config) {
                     var data = dt.buttons.exportData();
                     openModalPreviewCardUserSTD(data);
-                //    console.log(data );
+                    //    console.log(data );
                 }
             }
         ],
@@ -350,18 +356,19 @@ function setTable_DataTableForUserSTD(tablename) {
     // console.log($(`.sorting.sorting_asc`))
     $(`.sorting.sorting_asc`).click()
 }
+
 function setTable_DataTableForBook(tablename) {
     $(`#table-${tablename} thead tr`).clone(true).addClass('filters').appendTo(`#table-${tablename} thead`);
     table_option_v2 = $(`#table-${tablename}`).DataTable({
         dom: 'Bfrtip',
         searching: true,
         buttons: [
-            'csv', 'excel',{
+            'csv', 'excel', {
                 text: 'พิมพ์ Barcode',
-                action: function ( e, dt, node, config ) {
+                action: function(e, dt, node, config) {
                     var data = dt.buttons.exportData();
                     openModalPreviewCardBook(data);
-                //    console.log(data );
+                    //    console.log(data );
                 }
             }
         ],
@@ -618,7 +625,7 @@ function createGraphQuestionInSurvey(data, showInId) {
             },
             labels: {
                 // formatter: function(value, timestamp, opts) {
-                    
+
                 //     // return value.length > 20 ? `${value.slice(0, 20)}...` : `${value}`;
                 // }
             }

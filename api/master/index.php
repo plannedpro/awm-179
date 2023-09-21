@@ -159,6 +159,18 @@ $app->group('/master', function () use ($app) {
     $result = MasterBorrow($type,$dataAPI,$dataoption);
     echo json_encode($result);
   });
+  $app->post("/dashboard",function() use($app){
+    $json = $app->request->getBody();
+    $app->response->setStatus(200);
+    $contentType = $app->response->headers->get('Content-Type');
+    $app->response->headers->set('Content-Type', 'application/json');
+    $data = json_decode($json,true);
+    $type =checkTextSQL($data["type"]);
+    $dataAPI =checkTextSQL($data["data"]);
+    $dataoption =checkTextSQL($data["dataoption"]);
+    $result = MasterDashboard($type,$dataAPI,$dataoption);
+    echo json_encode($result);
+  });
 
 });
 

@@ -19,7 +19,7 @@ require('../../include/php/function-index-master.php');
 if (isset($_GET["page"])) {
    $page = $_GET["page"];
 } else {
-   $page = "inbox";
+   $page = "dashboard";
 }
 $datalogin = checkloginMaster();
 
@@ -77,7 +77,7 @@ getDataSettingAllToSession();
    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script> -->
 
    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-    <script type="text/javascript" src="include/js/moment-timezone.js"></script>
+    <script type="text/javascript" src="../../include/js/moment-timezone.js"></script>
 
     
    <script type="text/javascript" src="include/js/main_.js?v=2.3"></script>
@@ -287,7 +287,13 @@ getDataSettingAllToSession();
             include_once('include/page/book/history.php');
          }else if($page=='pending'){
             include_once('include/page/book/pending.php');
-         } else {
+         }else if($page=='bookGroup'){
+            include_once('include/page/book/manageGroup.php');
+         }else if($page=='bookShelf'){
+            include_once('include/page/book/manageShelf.php');
+         }else if($page=='dashboard'){
+            include_once('include/page/book/dashboard.php');
+         }else {
             include_once('include/page/page-notfound-404.php');
          }
          ?>
@@ -300,13 +306,44 @@ getDataSettingAllToSession();
    </div>
 
 
+   <div class="modal fade" id="modal-ViewPDF0" data-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-scrollable">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title" id="ViewPDF0-Title"></h5>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close"  onclick="closeAndClearModal('ViewPDF0')">
+                  <i class="far fa-times-circle"></i>
+               </button>
+            </div>
+            <div class="modal-body p-0" id="body-ViewPDF0">
+            </div>
+            
+         </div>
+      </div>
+   </div>
+
+   <div class="modal fade" id="modal-ModalOther" data-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog ">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title" id="ModalOther-Title"></h5>
+               <button type="button" class="close" id="closeAndViewBTN" onclick="closeAndClearModal('ModalOther')">
+                  <i class="far fa-times-circle"></i>
+               </button>
+            </div>
+            <div class="modal-body p-0" id="body-ModalOther">
+            </div>
+
+         </div>
+      </div>
+   </div>
 
    <div class="modal fade" id="modal-ViewPDF" data-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-xl modal-dialog-scrollable">
          <div class="modal-content">
             <div class="modal-header">
                <h5 class="modal-title" id="ViewPDF-Title"></h5>
-               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="closeAndClearModal('ViewPDF')">
                   <i class="far fa-times-circle"></i>
                </button>
             </div>
@@ -337,21 +374,7 @@ getDataSettingAllToSession();
       </div>
    </div>
   
-   <div class="modal fade" id="modal-ModalOther" data-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog ">
-         <div class="modal-content">
-            <div class="modal-header">
-               <h5 class="modal-title" id="ModalOther-Title"></h5>
-               <button type="button" class="close" onclick="closeAndClearModal('ModalOther')">
-                  <i class="far fa-times-circle"></i>
-               </button>
-            </div>
-            <div class="modal-body p-0" id="body-ModalOther">
-            </div>
 
-         </div>
-      </div>
-   </div>
 
 
 

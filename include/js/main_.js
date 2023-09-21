@@ -80,7 +80,34 @@ let ArrDayNamesTH = ["อาทิตย์", "จันทร์", "อัง�
 let ArrDayNamesTHShort = ["อ.", "จ.", "อ.", "พ.", "พฤ.", "ศ.", "ส."]
 
 
+// //console.log(convertDate(1644498354))
+moment.tz.setDefault("Asia/Bangkok");
+// moment.locale('th')
+moment.locale('TH');
 
+
+// moment.lang('TH');
+moment.locale('TH', {
+    months : arrMonthThaiFull,
+    monthsShort : ArrMonthShort,
+    monthsParseExact : true,
+    // weekdays : 'dimanche_lundi_mardi_mercredi_jeudi_vendredi_samedi'.split('_'),
+    weekdays:ArrDayNamesTH,
+    weekdaysShort : ArrDayNamesTHShort,
+    weekdaysMin : ArrDayNamesTHShort,
+    weekdaysParseExact : true,
+
+    meridiem : function (hours, minutes, isLower) {
+        // console.log(hours, minutes, isLower)
+        return hours < 12 ? 'เช้า' : hours==12? 'เที่ยง':  'บ่าย';
+    },
+    week : {
+        dow : 1, // Monday is the first day of the week.
+        doy : 4  // Used to determine first week of the year.
+    },
+    months :arrMonthThaiFull,
+    days:ArrDayNamesTH
+});
 
 
 $(window).ready(() => {

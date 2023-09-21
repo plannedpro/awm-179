@@ -187,16 +187,35 @@ $role = checkRoleAdmin();
                         </li>
                     </ul>
                 </li> -->
+                <li class="nav-header">หน้าหลัก</li>
+                <li class="nav-item ">
+                    <a class="nlist nav-link <?=active_menu('dashboard'); ?> " href="./?page=dashboard">
+                        <i class="nav-icon fas fa-home"></i>
+                        <p>Dashbaord
+                        </p>
+                    </a>
+                </li>
+
+                <li class="nav-header">สถิติการเข้าใช้บริการ </li>
+                <li class="nav-item ">
+                    <a class="nlist nav-link <?=active_menu('checkinreport'); ?> " href="./?page=checkinreport">
+                        <i class="nav-icon fas fa-house-user"></i>
+                        <p>สถิติการเข้าใช้บริการ
+                        </p>
+                    </a>
+                </li>
+
+
 
                 <li class="nav-header">รายการยืม-คืน </li>
                 <li class="nav-item ">
                     <a class="nlist nav-link <?=active_menu('borrow'); ?> " href="./?page=borrow">
-                        <!-- <i class="nav-icon fas fa-arrow-right"></i> -->
                         <i class="nav-icon fas fa-reply fa-flip-horizontal"></i>
                         <p>ยืมหนังสือ
                         </p>
                     </a>
                 </li>
+                
                 <li class="nav-item ">
                     <a class="nlist nav-link <?=active_menu('return'); ?> " href="./?page=return">
                         <i class="nav-icon fas fa-reply fa-flip-vertical"></i>
@@ -211,23 +230,15 @@ $role = checkRoleAdmin();
                         </p>
                     </a>
                 </li>
-                <li class="nav-item ">
+                <!-- <li class="nav-item ">
                     <a class="nlist nav-link <?=active_menu('pending'); ?> " href="./?page=pending">
                         <i class="nav-icon far fa-clock"></i>
                         <p> รายการยืม/รอคืน
                         </p>
                     </a>
-                </li>
+                </li> -->
 
-                <li class="nav-header">สถิติการเข้าใช้บริการ </li>
-                <li class="nav-item ">
-                    <a class="nlist nav-link <?=active_menu('checkinreport'); ?> " href="./?page=checkinreport">
-                        <i class="nav-icon fas fa-house-user"></i>
-                        <p>สถิติการเข้าใช้บริการ
-                        </p>
-                    </a>
-                </li>
-
+               
                 <li class="nav-header">จัดการข้อมูล </li>
                 <li class="nav-item ">
                     <a class="nlist nav-link <?=active_menu('managebook'); ?> " href="./?page=managebook">
@@ -245,9 +256,24 @@ $role = checkRoleAdmin();
                         </p>
                     </a>
                 </li>
+                <li class="nav-item ">
+                    <a class="nlist nav-link <?=active_menu('bookGroup'); ?> " href="./?page=bookGroup">
+                        <i class="nav-icon fas fa-swatchbook"></i>
+                        <p>จัดการหมวดหมู่หนังสือ
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nlist nav-link <?=active_menu('bookShelf'); ?> " href="./?page=bookShelf">
+                    <i class=" nav-icon fas fa-portrait"></i>
+                        <p>จัดการชั้น/ที่จัดเก็บ
+                        </p>
+                    </a>
+                </li>
 
 
                 <li class="nav-header"> การตั้งค่า </li>
+               
                 <?php if($role===0){ ?>
                 <li class="nav-item ">
                     <a class="nlist nav-link <?=active_menu('account-admin'); ?> " href="./?page=account-admin">

@@ -42,7 +42,12 @@ $(window).ready(() => {
     //     if (event.keyCode === 13) {
     //         getDataCheckInreport();
     //     }
-    // })
+    // }) 
+    $(`#inputScanBarcodeSTD`).keyup(function(event) {
+        if (event.keyCode === 13) {
+            checkBarcodeSID_ForRetrun()
+        }
+    })
     $('#inputScanBarcodeSTD').focus();
 });
 </script>
@@ -76,53 +81,14 @@ $(window).ready(() => {
         <div class="cardBorrow boxWhiteDashboard">
             <img src="../../include/img/icon/howToReturnBook.png" width="100%" alt="" srcset="">
             <div class="form-row">
-                <div class="col-md-12 mb-2 text-left">
+                <div class="col-md-12 mb-2 text-left" id="showResultScanBarcode_section0">
                     <label for="inputScanBarcodeSTD">1.แสกนหนังสือ</label>
                     <input type="text" class="form-control inputScanBarcode std" id="inputScanBarcodeSTD">
                 </div>
-                <div class="col-md-12 mb-2">
-                    <div class="text-left">ข้อมูลการยืม : 10.25 จันทร์ ที่ 10 มกราคม 2023</div>
-                    <div class="form-row detailBoxxxxx">
-                        <div class="col-6">
-                            <div class="box2">
-                                <div class="ttitle">วันที่ยืม</div>
-                                <div class="tnum">10 ม.ค. 2023</div>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="box2">
-                                <div class="ttitle">กำหนดคืน</div>
-                                <div class="tnum">17 ม.ค. 2023</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12 mb-2">
-                    <div class="text-left">ข้อมูลหนังสือ</div>
-                    <div class="showResultScanBarcode p-1 d-block">
-                        <div class="item">
-                            <div class="img">
-                                <img src="../../include/img/uploads/book/null.png"
-                                    onclick="viewModelPDFV2('include/img/uploads/book/','null.png','ปฏิภาณ อินธิบาล')"
-                                    width="100%" alt="" srcset="">
-                            </div>
-                            <div class="databook">
-                                <div class="name">การทำขนมไทยโบราณ</div>
-                                <div class="detail">
-                                    <div class="">หมวดหมู่ : อาหาร</div>
-                                    <div class="">ปีที่พิมพ์ : 2566</div>
-                                    <div class="">สถานที่เก็บ/ชั้น : ฤ01</div>
-                                </div>
-                            </div>
-                            <div class="option">
-                                <span class="btnDeleteBookOption"><i class="fas fa-times"></i></span>
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-md-12">
+                <div class="col-md-12 mb-2 text-left" id="showResultScanBarcode_section1"></div>
+            
+                <div class="col-md-12 mb-2" id="showResultScanBarcode_section2"> </div>
+                <!-- <div class="col-md-12">
                     <div class="text-left">ข้อมูลผู้ยืม</div>
                     <div class="showResultScanBarcode">
                         <div class="tagUserType"><small>ประเภทบัตร</small><br>นักเรียน</div>
@@ -136,11 +102,7 @@ $(window).ready(() => {
                         <div class="datauser">
                             <div class="title">เด็กชาย ปฏิภาณ อินธิบาล</div>
                             <div class="subtitle">รหัสสมาชิก : 19077</div>
-
-
-                            <!-- <div class="subtitle">ข้อมูลปีการศึกษา : 2566</div> -->
                             <div class="history">
-                                <!-- <div>ประวัติการทำรายการ</div> -->
                                 <div class="boxHistoryEasy">
                                     <div class="form-row">
                                         <div class="col-md-4">
@@ -168,21 +130,20 @@ $(window).ready(() => {
                                     </div>
                                 </div>
                             </div>
-                            
+
                         </div>
                     </div>
-                </div>
+                </div> -->
 
-                <div class="col-md-12 mb-2 mt-3 text-left">
-                    <div class="d-flex gap-2">
-                        <a href="?page=borrow" class=""><button type="button"
-                                class="btn btn-secondary w-100">ยกเลิก</button></a>
-                        <button type="button" class="btn btn-success w-100">ยืนยันรับเข้าระบบ</button>
-
-                    </div>
-                </div>
+                <div class="col-md-12 mb-2 mt-3 text-left" id="showResultScanBarcode_section3"></div>
             </div>
         </div>
 
     </div>
 </section>
+<audio id="sound-return_step1" src="../../include/sound/return_step1.mp3"></audio>
+
+<audio id="sound-return_step11" src="../../include/sound/return_step11.mp3"></audio>
+<audio id="sound-return_step2" src="../../include/sound/return_step2.mp3"></audio>
+
+<audio id="sound-notfound" src="../../include/sound/notfound.mp3"></audio>

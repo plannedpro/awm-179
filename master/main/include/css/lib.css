@@ -1,371 +1,477 @@
 .InputGroupcheckbox {
-  display: none;
+    display: none;
 }
 
 .LabelGroupCheckbox {
-  border: 1px solid #ebebeb;
-  padding: .5rem;
-  width: 100%;
-  text-align: center;
-  border-radius: .5rem;
-  color: #000 !important;
-  transition: all .5s;
-  cursor: pointer;
+    border: 1px solid #ebebeb;
+    padding: .5rem;
+    width: 100%;
+    text-align: center;
+    border-radius: .5rem;
+    color: #000 !important;
+    transition: all .5s;
+    cursor: pointer;
 }
 
 .InputGroupcheckbox:checked+.LabelGroupCheckbox {
-  background-color: #cf5395;
-  color: #fff !important;
-  transition: all .5s;
-  border: 1px solid #b53278;
+    background-color: #cf5395;
+    color: #fff !important;
+    transition: all .5s;
+    border: 1px solid #b53278;
 }
 
 ::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: rgb(122, 122, 122);
-  opacity: 1;
-  /* Firefox */
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(122, 122, 122);
+    opacity: 1;
+    /* Firefox */
 }
 
 :-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
-  color: rgb(192, 192, 192);
+    /* Internet Explorer 10-11 */
+    color: rgb(192, 192, 192);
 }
 
 ::-ms-input-placeholder {
-  /* Microsoft Edge */
-  color: rgb(174, 174, 174);
+    /* Microsoft Edge */
+    color: rgb(174, 174, 174);
 }
 
 .areaShowPreviewImgUpload {
-  display: none;
-  /* display: flex; */
-  height: 12rem;
-  overflow: hidden;
-  align-items: center;
-  border-radius: 0.5rem;
-  border: 1px solid #e8e8e8;
-  max-width: 10rem;
+    display: none;
+    /* display: flex; */
+    height: 12rem;
+    overflow: hidden;
+    align-items: center;
+    border-radius: 0.5rem;
+    border: 1px solid #e8e8e8;
+    max-width: 10rem;
 }
 
 .areaShowPreviewImgUpload img {}
 
 .formUploadImgCustom {
-  height: 12rem;
-  overflow: hidden;
-  align-items: center;
-  border-radius: 0.5rem;
-  border: 1px solid #e8e8e8;
-  max-width: 10rem;
-  display: flex;
-  cursor: pointer;
+    height: 12rem;
+    overflow: hidden;
+    align-items: center;
+    border-radius: 0.5rem;
+    border: 1px solid #e8e8e8;
+    max-width: 10rem;
+    display: flex;
+    cursor: pointer;
 }
 
 table#table-users {
-  width: 100% !important;
+    width: 100% !important;
 }
 
 .showDashBoardUserSTD {}
 
 .modal-body-wrapper {
-  overflow-y: scroll;
-  height: 60vh;
+    overflow-y: scroll;
+    height: 60vh;
 }
 
 @media print {
-  .forPrint {
-    display: block;
-    column-count: 2;
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-  }
-
-  .noPrint {
-    display: none;
-  }
+    .forPrint {
+        display: block;
+        column-count: 2;
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+    }
+    .noPrint {
+        display: none;
+    }
 }
 
 @page {
-  size: auto;
-  /* OR 6.5in 8.5in; A4 */
-  margin-top: 0.5cm;
-  margin-left: 0.5cm;
-  margin-right: 0.5cm;
-}
-
-
-@media print {
-  .modal-dialog {
-    max-width: 100%;
-    width: 100%;
-
-  }
+    size: auto;
+    /* OR 6.5in 8.5in; A4 */
+    margin-top: 0.5cm;
+    margin-left: 0.5cm;
+    margin-right: 0.5cm;
 }
 
 @media print {
-  .two {
-    column-count: 2;
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-  }
-
-  .one {
-    column-count: 1;
-    -webkit-column-count: 1;
-    -moz-column-count: 1;
-    /* grid-template-columns: repeat(); */
-  }
+    .modal-dialog {
+        max-width: 100%;
+        width: 100%;
+    }
 }
 
+@media print {
+    .two {
+        column-count: 2;
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+    }
+    .one {
+        column-count: 1;
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        /* grid-template-columns: repeat(); */
+    }
+}
 
 .input_book_barcode {
-  height: 3rem;
-  text-align: center;
-  font-weight: 600;
-  font-size: 1.5rem;
-  color: #e83e8c;
-  /* background-color: #fff8fb; */
+    height: 3rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #e83e8c;
+    /* background-color: #fff8fb; */
 }
 
 .inputOnDataTable {
-  width: 4rem;
-  font-weight: 600;
-  text-align: center;
-  border-radius: .3rem;
-  border: 1px solid #d9d9d9;
-  height: 1.3rem;
+    width: 4rem;
+    font-weight: 600;
+    text-align: center;
+    border-radius: .3rem;
+    border: 1px solid #d9d9d9;
+    height: 1.3rem;
 }
 
 .inputOnDataTable:focus-visible {
-  border: 1px solid #d9d9d9 !important;
-  color: red;
-  outline: 0 !important
+    border: 1px solid #d9d9d9 !important;
+    color: red;
+    outline: 0 !important
 }
 
 .boxGraphCheckInLast30 {
-  background-color: #fff;
-  border-radius: 1rem;
-  padding: 1rem 0px;
-  box-shadow: #ebebeb 0px 5px 14px 0px;
-  width: 100%;
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 1rem 0px;
+    box-shadow: #ebebeb 0px 5px 14px 0px;
+    width: 100%;
 }
 
 .CheckInreport {
-  background-color: #fff;
-  border-radius: 1rem;
-  padding: 1rem;
-  box-shadow: #ebebeb 0px 5px 14px 0px;
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: #ebebeb 0px 5px 14px 0px;
 }
 
 .titleG {
-  font-weight: 600;
-  font-size: 1rem;
-  margin-bottom: .5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: .5rem;
 }
 
 .boxWhiteDashboard {
-  background-color: #fff;
-  border-radius: 1rem;
-  padding: 1rem;
-  box-shadow: #ebebeb 0px 5px 14px 0px;
-  text-align: center;
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: #ebebeb 0px 5px 14px 0px;
+    text-align: center;
 }
 
 .boxWhiteDashboard .title {
-  font-weight: 300;
+    font-weight: 300;
 }
 
 .boxWhiteDashboard .num {
-  font-size: 2rem;
-  line-height: 1;
-  color: #cf5395;
+    font-size: 2rem;
+    line-height: 1;
+    color: #cf5395;
 }
 
 .boxWhiteDashboard .subtitle {
-  font-weight: 300;
+    font-weight: 300;
 }
 
 .cardBorrow {
-  max-width: 570px;
-  margin: auto;
+    max-width: 600px;
+    margin: auto;
 }
 
 .inputScanBarcode {
-  text-align: center;
-  font-weight: 600;
-  font-size: 2rem;
-  height: 3rem;
-  color: #a6a6a6;
+    text-align: center;
+    font-weight: 600;
+    font-size: 2rem;
+    height: 3rem;
+    color: #a6a6a6;
 }
 
 .inputScanBarcode.std {}
 
 .showResultScanBarcode {
-  display: flex;
-  border: 1px dashed #cf5395;
-  border-radius: 0.5rem;
-  background-color: #cf53950d;
-  padding: 1rem;
-  position: relative;
+    display: flex;
+    border: 1px dashed #cf5395;
+    border-radius: 0.5rem;
+    background-color: #cf53950d;
+    padding: 1rem;
+    position: relative;
 }
 
 .showResultScanBarcode .imgprofile {
-  width: 7rem;
-  display: grid;
-  justify-content: center;
-  align-content: center;
+    width: 7rem;
+    display: grid;
+    justify-content: center;
+    align-content: center;
 }
 
 .showResultScanBarcode .imgprofile .img {
-  height: 8rem;
-  border: 1px solid #cf539563;
-  border-radius: .5rem;
-  overflow: hidden;
-  width: 7rem;
-  display: grid;
-  align-content: center;
-  justify-content: center;
-  background-color: #fff;
-  cursor: pointer;
+    height: 8rem;
+    border: 1px solid #cf539563;
+    border-radius: .5rem;
+    overflow: hidden;
+    width: 7rem;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    background-color: #fff;
+    cursor: pointer;
 }
 
 .showResultScanBarcode .imgprofile .sid {
-  font-weight: 600;
-  margin-top: .25rem;
+    font-weight: 600;
+    margin-top: .25rem;
 }
 
 .showResultScanBarcode .datauser {
-  margin-left: .5rem;
-  width: 90%;
-  text-align: left;
-  margin-top: .5rem;
+    margin-left: .5rem;
+    width: 90%;
+    text-align: left;
+    margin-top: .5rem;
 }
 
 .showResultScanBarcode .datauser .title {
-  font-size: 1.5rem;
-  line-height: 1;
-  color: #cf5395;
-  font-weight: 500;
-  margin-bottom: .5rem;
+    font-size: 1.5rem;
+    line-height: 1;
+    color: #cf5395;
+    font-weight: 500;
+    margin-bottom: .5rem;
 }
 
 .showResultScanBarcode .datauser .subtitle {}
 
 .showResultScanBarcode .tagUserType {
-  position: absolute;
-  top: -4px;
-  right: 7px;
-  background-color: #8c5cb0;
-  color: #fff;
-  padding: .25rem 2rem;
-  border-radius: 0 0rem .5rem .5rem;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 19px 0px;
-  line-height: 1.2;
+    position: absolute;
+    top: -4px;
+    right: 7px;
+    background-color: #8c5cb0;
+    color: #fff;
+    padding: .25rem 2rem;
+    border-radius: 0 0rem .5rem .5rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 19px 0px;
+    line-height: 1.2;
 }
 
 .boxHistoryEasy .box1 {
-  text-align: center;
-  background-color: #fff;
-  border-radius: .5rem;
-  line-height: 1.2;
-  padding: .5rem 0;
-  font-size: .8rem;
-  cursor: pointer;
+    text-align: center;
+    background-color: #fff;
+    border-radius: .5rem;
+    line-height: 1.2;
+    padding: .5rem 0;
+    font-size: .8rem;
+    cursor: pointer;
 }
 
 .boxHistoryEasy .box1 .tnum {
-  font-size: 1.2rem;
+    font-size: 1.2rem;
 }
 
-
-
 .boxHistoryEasy .box1.pending {
-  background-color: #cf53952e;
+    background-color: #cf53952e;
 }
 
 .btnGroupConfirmAfterScan {
-  gap: 5px;
-  margin-top: .5rem;
+    gap: 5px;
+    margin-top: .5rem;
 }
 
 .btn-primary {
-  background-color: #cf5395;
-  border: 1px solid #b5387b;
+    background-color: #cf5395;
+    border: 1px solid #b5387b;
 }
 
 .btn-primary:focus-visible,
 .btn-primary:focus,
 .btn-primary:active,
 .btn-primary:hover {
-  background-color: #e064a6 !important;
-  border-color: #c2538e !important;
-  box-shadow: 0 0 0 0.2rem rgba(255, 0, 195, 0.5);
+    background-color: #e064a6 !important;
+    border-color: #c2538e !important;
+    box-shadow: 0 0 0 0.2rem rgba(255, 0, 195, 0.5);
 }
 
-.showResultScanBarcode .item {
-  width: 100%;
-  display: flex;
-  /* border: 1px solid #cf5395; */
-  background-color: #fff;
-  border-radius: .25rem;
-  margin-bottom: .25rem;
-  padding: .25rem;
+.item.bookBorrow {
+    width: 100%;
+    display: flex;
+    /* border: 1px solid #cf5395; */
+    background-color: #fff;
+    border-radius: .25rem;
+    margin-bottom: .25rem;
+    padding: .25rem;
+    position: relative;
 }
 
-.showResultScanBarcode .item .img {
-  border: 1px solid #cf539563;
-  border-radius: .5rem;
-  overflow: hidden;
-  width: 4rem;
-  display: grid;
-  align-content: center;
-  justify-content: center;
-  background-color: #fff;
-  cursor: pointer;
-  height: 4.5rem;
+.bookBorrow.item .img {
+    border: 1px solid #cf539563;
+    border-radius: .5rem;
+    overflow: hidden;
+    width: 4rem;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    background-color: #fff;
+    cursor: pointer;
+    height: 4.5rem;
 }
 
-.showResultScanBarcode .item .databook {
-  width: 85%;
-  text-align: left;
-  padding: .2rem 0 .25rem .5rem;
+.bookBorrow.item .databook {
+    width: 85%;
+    text-align: left;
+    padding: .2rem 0 .25rem .5rem;
 }
 
-.showResultScanBarcode .item .databook .name {
-  font-weight: 500;
-  font-size: 1.1rem;
-  color: #6f309e;
+.bookBorrow.item .databook .name {
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #6f309e;
 }
 
-.showResultScanBarcode .item .databook .detail {
-  font-size: .8rem;
-  line-height: 1.2;
-  /* display: grid; */
-  /* grid-template-columns: repeat(3,1fr); */
+.bookBorrow.item .databook .detail {
+    font-size: .8rem;
+    line-height: 1.2;
+    /* display: grid; */
+    /* grid-template-columns: repeat(3,1fr); */
 }
 
-.showResultScanBarcode .item .option {
-  text-align: end;
+.item.bookBorrow.detail {
+    border: 1px solid #cf5395;
+    background-color: #fcf7fa;
 }
-.btnDeleteBookOption{
-  cursor: pointer;
-}
-.nav-sidebar .nav-header{
-  padding: 1rem 0 0 1rem;
-}
-.detailBoxxxxx{
 
+.bookBorrow.item .option {
+    text-align: end;
 }
-.detailBoxxxxx .box2{
-  text-align: center;
-  background-color: #f8f5fa;
-  border-radius: .5rem;
-  line-height: 1.2;
-  padding: .5rem 0;
-  font-size: .8rem;
-  cursor: pointer;
-  border: 1px solid #8d5db2;
+
+.bookBorrow.item .status {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    background-color: #a6a6a6;
+    padding: .1rem 10px;
+    border-radius: 0 0 .25rem .25rem;
+    color: #fff;
 }
-.detailBoxxxxx .box2 .tnum{
-  font-size: 1.2rem;
+
+.bookBorrow.item.pending {
+    background-color: #ffe7e7;
+    border: 1px solid red;
+}
+
+.bookBorrow.item.completed {
+    background-color: #effff6;
+    border: 1px solid green;
+}
+
+.bookBorrow.item.pending .status {
+    background-color: red;
+}
+
+.bookBorrow.item.completed .status {
+    background-color: green;
+}
+
+.btnDeleteBookOption {
+    cursor: pointer;
+}
+
+.nav-sidebar .nav-header {
+    padding: 1rem 0 0 1rem;
+}
+
+.detailBoxxxxx {}
+
+.detailBoxxxxx .box2 {
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: .5rem;
+    line-height: 1.2;
+    padding: .2rem 0;
+    font-size: .75rem;
+    cursor: pointer;
+    border: 1px solid #bf99dc;
+    color: #8c5cb0;
+}
+
+.detailBoxxxxx .box2 .tnum {
+    font-size: 1rem;
+}
+
+.boxItemBorrow {
+    margin-bottom: 0.5rem;
+}
+
+.itemBorrow {
+    display: none;
+}
+
+.labelItemBorrow {
+    width: 100%;
+    background-color: #f8f5fa;
+    padding: .5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: all .5s;
+    display: flex;
+    position: relative;
+    /* margin-bottom: 1rem; */
+    color: red;
+}
+
+.itemBorrow:checked+.labelItemBorrow {
+    /* border: 1px solid #8c5cb0; */
+    background-color: #8c5cb0;
+    color: #fff;
+    transition: all .5s;
+}
+
+.labelItemBorrow>.b1 {
+    width: 4rem;
+    text-align: center;
+    margin-right: .5rem;
+}
+
+.labelItemBorrow .img {
+    border: 1px solid #cf539563;
+    border-radius: .5rem;
+    overflow: hidden;
+    width: 4rem;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    background-color: #fff;
+    cursor: pointer;
+    height: 4.5rem;
+    margin-right: .5rem;
+}
+
+.labelItemBorrow .detail {
+    width: 87%;
+}
+
+.labelItemBorrow .detail .doc_no {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.labelItemBorrow>.tagUserType {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    text-align: center;
+    position: absolute;
+    top: -4px;
+    right: 7px;
+    background-color: #f8f5fa;
+    color: #8c5cb0;
+    padding: .25rem 2rem;
+    border-radius: 0 0rem .5rem .5rem;
+    box-shadow: rgba(100, 100, 111, 0.1) 0px 5px 8px 0px;
+    line-height: 1.2;
+    /* border: 1px solid #fff; */
 }
