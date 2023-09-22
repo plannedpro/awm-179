@@ -689,7 +689,7 @@ function MasterDashboard($type,$dataAPI,$dataoption){
     left join lib_users  as users on users.user_id=borrow.borrow_user_id
     left join lib_book as book on bbook.bb_book_id=book.book_id
     left join lib_book_group as g on g.group_id=book.book_group_id
-    where (borrow_create_doc BETWEEN ? AND ?) '.$search1.' group by group_name order by count(`group_name`) desc limit 10 ',array($dataAPI['start'],$dataAPI['end']));
+    where (borrow_create_doc BETWEEN ? AND ?) and group_name is not null '.$search1.' group by group_name order by count(`group_name`) desc limit 10 ',array($dataAPI['start'],$dataAPI['end']));
 
 
     $data = array('logBorrow'=>$logBorrow,'pending'=>$pending,'top5book'=>$top5Book,'top5user'=>$top5User,'userClass'=>$UserClass,'byBookGroup'=>$byBookGroup );

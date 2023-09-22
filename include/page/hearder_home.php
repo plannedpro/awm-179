@@ -8,8 +8,8 @@
                 <h2 data-aos="fade-up" data-aos-delay="800" class="mb-5"> <small><small>สํานักงานเขตพื้นที่การศึกษาประถมศึกษาสระแก้ว เขต 1</small></small></h2>
                 <div class="d-flex justify-content-center justify-content-lg-start gap-2" data-aos="fade-up" data-aos-delay="1000">
                     <a href="<?=BASEPATH?>master" class="btn-get-started scrollto">เข้าสู่ระบบ</a>
-                    <a href="#about" class="btn-get-started scrollto">บันทึกการเข้าใช้งานห้องสมุด</a>
-                    <a href="#about" class="btn-get-started scrollto">ค้นหาหนังสือ</a>
+                    <a href="<?=BASEPATH?>checkin" class="btn-get-started scrollto">บันทึกการเข้าใช้งานห้องสมุด</a>
+                    <a href="<?=BASEPATH?>search" class="btn-get-started scrollto">ค้นหาหนังสือ</a>
                     <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i
                             class="bi bi-play-circle"></i><span>วิธีการใช้งาน</span></a> -->
                 </div>
