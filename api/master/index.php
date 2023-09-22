@@ -66,6 +66,19 @@ $app->group('/public', function () use ($app) {
     // $result = array(1,2);
     echo json_encode($result);
   });
+  $app->post("/search",function() use($app){
+    $json = $app->request->getBody();
+    $app->response->setStatus(200);
+    $contentType = $app->response->headers->get('Content-Type');
+    $app->response->headers->set('Content-Type', 'application/json');
+    $data = json_decode($json,true);
+    $type =checkTextSQL($data["type"]);
+    $dataAPI =checkTextSQL($data["data"]);
+    $dataoption =checkTextSQL($data["dataoption"]);
+    $result = searchDataBook($type,$dataAPI,$dataoption);
+    // $result = array(1,2);
+    echo json_encode($result);
+  });
 });
 
 $app->group('/master', function () use ($app) {

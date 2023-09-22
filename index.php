@@ -153,12 +153,13 @@ $versionScript = 1;
 
     Route::add('/checkin', function() {
         include('include/page/page_checkin.php');
-        // include('include/page/about.php');
-        // include('include/page/team.php');
+    });
+    Route::add('/search', function() {
+        include('include/page/page_search.php');
     });
 
 
-
+    
 
 
     Route::pathNotFound(function($path) {
@@ -213,5 +214,7 @@ $versionScript = 1;
         </div>
     </div>
 </div>
+
+
 
 </html>

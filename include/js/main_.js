@@ -14,10 +14,10 @@ if (YOURDOMAIN == 'localhost') {
 // let URLAPI = '../../../api/master/';
 function setPathURL_T(path) {
     //console.log(path)
-    
+
     BASEPATH = path;
-    URLAPI = `${path}api/master/`;// //console.log(path, URLAPI);
-     // //console.log(YOURDOMAIN)
+    URLAPI = `${path}api/master/`; // //console.log(path, URLAPI);
+    // //console.log(YOURDOMAIN)
 }
 
 
@@ -88,25 +88,25 @@ moment.locale('TH');
 
 // moment.lang('TH');
 moment.locale('TH', {
-    months : arrMonthThaiFull,
-    monthsShort : ArrMonthShort,
-    monthsParseExact : true,
+    months: arrMonthThaiFull,
+    monthsShort: ArrMonthShort,
+    monthsParseExact: true,
     // weekdays : 'dimanche_lundi_mardi_mercredi_jeudi_vendredi_samedi'.split('_'),
-    weekdays:ArrDayNamesTH,
-    weekdaysShort : ArrDayNamesTHShort,
-    weekdaysMin : ArrDayNamesTHShort,
-    weekdaysParseExact : true,
+    weekdays: ArrDayNamesTH,
+    weekdaysShort: ArrDayNamesTHShort,
+    weekdaysMin: ArrDayNamesTHShort,
+    weekdaysParseExact: true,
 
-    meridiem : function (hours, minutes, isLower) {
+    meridiem: function(hours, minutes, isLower) {
         // console.log(hours, minutes, isLower)
-        return hours < 12 ? 'เช้า' : hours==12? 'เที่ยง':  'บ่าย';
+        return hours < 12 ? 'เช้า' : hours == 12 ? 'เที่ยง' : 'บ่าย';
     },
-    week : {
-        dow : 1, // Monday is the first day of the week.
-        doy : 4  // Used to determine first week of the year.
+    week: {
+        dow: 1, // Monday is the first day of the week.
+        doy: 4 // Used to determine first week of the year.
     },
-    months :arrMonthThaiFull,
-    days:ArrDayNamesTH
+    months: arrMonthThaiFull,
+    days: ArrDayNamesTH
 });
 
 
@@ -450,3 +450,11 @@ function days_between(date1, date2) {
     return Math.round(difference_ms/ONE_DAY)
   
   }
+
+
+  function buttonRotateImgPrevice(e, token, anglePreview) {
+    let img = byId(`imgPreview_${token}`);
+    anglePreview = (anglePreview + 90) % 360;
+    img.className = `imgPreview_ rotate${anglePreview}`;
+    e.setAttribute('onclick', `buttonRotateImgPrevice(this,'${token}',${anglePreview})`);
+}

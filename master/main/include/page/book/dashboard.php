@@ -61,8 +61,8 @@ $(window).ready(() => {
                 <i class="fas fa-plus"></i> เพิ่มข้อมูลใหม่</span> -->
                 <span onclick="getDataDashboard()" class="badge badge-pill badge-secondary cursor-pointer"><i
                         class="fas fa-sync-alt"></i> รีเฟรชข้อมูล</span>
-                <div class="ui icon input mini d-none">
-                    <input id="search-dashboard" autocomplete="off" type="text" placeholder="Scan Barcode" />
+                <div class="ui icon input mini">
+                    <input id="search-dashboard" autocomplete="off" type="text" placeholder="บัตรสมาชิก" />
                 </div>
                 <div class="ui icon input mini">
                     <input id="filterDate" autocomplete="off" type="text" placeholder="Search..." />

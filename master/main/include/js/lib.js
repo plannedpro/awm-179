@@ -838,6 +838,7 @@ function getDataBookAll() {
         "เลขทะเบียน",
         "ปีที่พิมพ์",
         "จำนวน",
+        "พร้อมให้บริการ",
         "พิมพ์บาร์โค้ด",
         "Status",
         "Edit",
@@ -876,7 +877,16 @@ function getDataBookAll() {
 
                     ArrTd[6].innerHTML = `${book.book_year}`;
                     ArrTd[7].innerHTML = `${book.book_num}`;
-                    ArrTd[8].innerHTML = `<input class="inputOnDataTable" id="inputshowNumOfPrint_${book.book_barcode}" type="number" value="${book.book_num}">`;
+
+                    let statusPending = 0;
+                    let numBookAll = parseInt(book.book_num);
+                    book.pending.forEach(p => {
+                        statusPending++;
+                    });
+
+
+                    ArrTd[8].innerHTML = `${addCommas(numBookAll-statusPending)}`;
+                    ArrTd[9].innerHTML = `<input class="inputOnDataTable" id="inputshowNumOfPrint_${book.book_barcode}" type="number" value="${book.book_num}">`;
                     if (book.book_status == 1) {
                         ArrTd[arrayhead.length - 2].innerHTML = CreateButtonInCellTable(
                             'ACTIVE <i class="fas fa-power-off"></i>',
@@ -1202,7 +1212,7 @@ let SELECT_FILTER_DATE__START = moment()
     .startOf("day")
     .format("YYYY-MM-DD HH:mm:s");
 let SELECT_FILTER_DATE__END = moment()
-    .startOf("end")
+    .endOf("day")
     .format("YYYY-MM-DD HH:mm:s");
 function getDataCheckInreport() {
     let tablename = "CheckInreport";
@@ -1488,10 +1498,18 @@ function checkBarcodeBook_forBorrow(user_id) {
                     if (output.status == 200) {
                         output.data.forEach((book) => {
                             if (!ARR_BOOK_FOR_BORROW.includes(parseInt(book.book_id))) {
+
+                                let statusPending = 0;
+                                let numBookAll = parseInt(book.book_num);
+                                book.pending.forEach(p => {
+                                    statusPending++;
+                                });
+
+
                                 section3.insertAdjacentHTML(
                                     "beforeend",
                                     `<div class="item bookBorrow" id="item_book_${book.book_id}">
-                        
+                                    <div class="statusBook12 ${numBookAll>statusPending?`ok`:`no`}">${numBookAll>statusPending?`ว่าง/พร้อมให้บริการ ${numBookAll-statusPending} เล่ม`:`ไม่ว่าง/รอคืน`}</div>
                         <input type="hidden" class="bookItem_Forborrow" value="${book.book_id}">
                         <input type="hidden" id="bookItem_name_${book.book_id}" value="${book.book_name}">
                         <input type="hidden" id="bookItem_cover_${book.book_id}" value="${book.book_cover}">
@@ -2592,6 +2610,7 @@ function getDataDashboard(){
         search: byId("search-dashboard").value,
     };
 
+    console.log(dataAPI);
     let tablename = "logBook5";
     let divname = `show-${tablename}`;
     let arrayhead = ["ชื่อเรื่อง", "หมวดหมู่","จำนวนครั้ง"];
@@ -2621,8 +2640,13 @@ function getDataDashboard(){
 
     GraphLogBorrow ? GraphLogBorrow.destroy() : null;
     byId("boxGraphLogBorrow").innerHTML = "";
+    chartUserByBookGroup?chartUserByBookGroup.destroy():null;
+    chartUserByClassRoom?chartUserByClassRoom.destroy():null;
     byId(`show-bookgroup`).innerHTML = "";
     byId(`show-userClass`).innerHTML = "";
+
+
+
 
     connectApi("master/dashboard",{ type: "all", data: dataAPI, dataoption: 0 }, "",function (output) {
             console.log(output)
@@ -2776,7 +2800,7 @@ function getDataDashboard(){
                   legend: {
                     position: 'bottom',
                     formatter: function(val, opts) {
-                      return val + " - " + opts.w.globals.series[opts.seriesIndex]+ ' คน';
+                      return val + " - " + opts.w.globals.series[opts.seriesIndex]+ ' ครั้ง';
                     }
                   },
                   responsive: [{
@@ -2796,7 +2820,7 @@ function getDataDashboard(){
                   var options2 = {
                     series: arrBookGroupData,
                     chart: {
-                        height: 350,
+                        height: 320,
                     type: 'pie',
                     toolbar:{
                         show: true,
@@ -2841,7 +2865,7 @@ function getDataDashboard(){
                   legend: {
                     position: 'bottom',
                     formatter: function(val, opts) {
-                      return val + " - " + opts.w.globals.series[opts.seriesIndex]+ ' เล่ม';
+                      return val + " - " + opts.w.globals.series[opts.seriesIndex]+ ' ครั้ง';
                     }
                   },
                   

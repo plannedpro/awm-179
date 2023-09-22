@@ -475,3 +475,20 @@ table#table-users {
     line-height: 1.2;
     /* border: 1px solid #fff; */
 }
+
+.statusBook12 {
+    position: absolute;
+    right: 7px;
+    top: 0;
+    background-color: #70309f;
+    padding: .15rem 1rem;
+    border-radius: 0 0 .5rem .5rem;
+    color: #fff;
+    font-size: .85rem;
+}
+
+.statusBook12.ok {}
+
+.statusBook12.no {
+    background-color: #a6a6a6;
+}

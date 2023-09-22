@@ -9,7 +9,7 @@
             <nav id="navbar" class="navbar" data-aos="fade-down" data-aos-delay="200">
                 <ul>
                     <li><a class="nav-link scrollto #active" href="<?=BASEPATH?>"><i class='bx bx-home me-1' ></i> หน้าหลัก</a></li>
-                    <li><a class="nav-link scrollto" href="#about"><i class='bx bxs-school me-1' ></i> เกี่ยวกับโรงเรียน</a></li>
+                    <!-- <li><a class="nav-link scrollto" href="#about"><i class='bx bxs-school me-1' ></i> เกี่ยวกับโรงเรียน</a></li> -->
                     <!-- <li><a class="nav-link scrollto " target="_blank" href="https://lllskill.com/quiz/index.php">โปรแกรมแบบวัดแววความถนัดทางอาชีพ</a></li> -->
                     <!-- <li class="dropdown"><a href="#services"><span>เรียนรู้อาชีพ</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
@@ -33,7 +33,8 @@
 
                    
                     <!-- <li><a class="nav-link scrollto" href="#team"><i class='bx bx-user me-1' ></i> ผู้บริหาร</a></li> -->
-                    <li><a class="nav-link scrollto" href="<?=BASEPATH?>checkin"><i class='bx bx-user me-1' ></i> หน้าจอบันทึกการเข้าใช้งาน</a></li>
+                    <li><a class="nav-link scrollto" href="<?=BASEPATH?>checkin"><i class='bx bx-user me-1' ></i> บันทึกการเข้าใช้งานห้องสมุด</a></li>
+                    <li><a class="nav-link scrollto" href="<?=BASEPATH?>search"><i class='bx bxs-book me-1'></i> ค้นหาหนังสือ</a></li>
 
                     <li><a class="nav-link scrollto" href="<?=BASEPATH?>master"><i class='bx bx-lock-alt me-1' ></i> เข้าสู่ระบบ</a></li>
                     <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
