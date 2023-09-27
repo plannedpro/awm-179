@@ -479,12 +479,13 @@ table#table-users {
 .statusBook12 {
     position: absolute;
     right: 7px;
-    top: 0;
+    bottom: 0;
     background-color: #70309f;
     padding: .15rem 1rem;
-    border-radius: 0 0 .5rem .5rem;
+    border-radius: .5rem .5rem 0 0;
     color: #fff;
     font-size: .85rem;
+    /* display: none; */
 }
 
 .statusBook12.ok {}

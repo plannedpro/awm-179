@@ -16,13 +16,13 @@ $host="localhost";
 $user="plannedp_demo";
 $pass = "ZQkycG91Er";
 $db_name="plannedp_demo";
-/**//**//** *//** *//** *//*
+/**//**//** *//** *//** *//** */
 $host="localhost";
 $user="root";
 $pass = "";
 $db_name="project_lib";
 /**/
-/** *//** */
+/** *//** *//*
 $host="localhost";
 $user="plannedp_awm179";
 $pass = "IpMQgcB8n";
