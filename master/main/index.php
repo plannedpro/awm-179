@@ -41,20 +41,20 @@ getDataSettingAllToSession();
    <link rel="shortcut icon" href="../../include/img/logo.png" type="image/png" />
     <link href="../../include/img/logo.png" rel="apple-touch-icon">
 
-   <link rel="stylesheet" href="include/css/OverlayScrollbars.min.css?v=2.3">
-   <link rel="stylesheet" href="include/css/adminlte.min.css?v=2.3">
-   <link rel="stylesheet" href="include/css/main.css?v=2.3">
-   <!-- <link rel="stylesheet" href="include/css/main_admin.css?v=2.3"> -->
+   <link rel="stylesheet" href="include/css/OverlayScrollbars.min.css?v=2.4">
+   <link rel="stylesheet" href="include/css/adminlte.min.css?v=2.4">
+   <link rel="stylesheet" href="include/css/main.css?v=2.4">
+   <!-- <link rel="stylesheet" href="include/css/main_admin.css?v=2.4"> -->
    <title>MASTER ADMIN - <?= getDataSetting('web_title'); ?></title> 
    <!-- <script src="../../include/sweetalert/sweetalert2@11"></script> -->
 
-   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js?v=2.3"></script> -->
+   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js?v=2.4"></script> -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
    <script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-   <!-- <link rel="stylesheet" href="https://cdn.js?v=2delivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css?v=2.3" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous"> -->
-   <!-- <script src="../../include/bootstrap/bootstrap.min.js?v=2.3"></script> -->
+   <!-- <link rel="stylesheet" href="https://cdn.js?v=2delivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css?v=2.4" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous"> -->
+   <!-- <script src="../../include/bootstrap/bootstrap.min.js?v=2.4"></script> -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 
    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" />
@@ -67,46 +67,46 @@ getDataSettingAllToSession();
 
 
 
-   <script src="include/js/jquery/jquery.overlayScrollbars.min.js?v=2.3"></script>
-   <script src="include/js/adminlte.js?v=2.3"></script>
-   <!-- <link href="../../include/js/jquery.Thailand.js?v=2/dist/jquery.Thailand.min.css?v=2.3" rel="stylesheet" > -->
-   <!-- <link href="../../include/fontawesome/css/all.css?v=2.3" rel="stylesheet"> -->
+   <script src="include/js/jquery/jquery.overlayScrollbars.min.js?v=2.4"></script>
+   <script src="include/js/adminlte.js?v=2.4"></script>
+   <!-- <link href="../../include/js/jquery.Thailand.js?v=2/dist/jquery.Thailand.min.css?v=2.4" rel="stylesheet" > -->
+   <!-- <link href="../../include/fontawesome/css/all.css?v=2.4" rel="stylesheet"> -->
    <script src="https://kit.fontawesome.com/64d58efce2.js" type="text/javascript"></script>
    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-   <link href="../../include/css/semantic.css?v=2.3" rel="stylesheet" />
+   <link href="../../include/css/semantic.css?v=2.4" rel="stylesheet" />
    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script> -->
 
    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
     <script type="text/javascript" src="../../include/js/moment-timezone.js"></script>
 
     
-   <script type="text/javascript" src="include/js/main_.js?v=2.3"></script>
+   <script type="text/javascript" src="include/js/main_.js?v=2.4"></script>
 
-   <script src="include/js/paginator.js?v=2.3" type="text/javascript"></script>
-   <script src="include/js/old.js?v=2.3" type="text/javascript"></script>
-   <script src="include/js/old2.js?v=2.3" type="text/javascript"></script>
+   <script src="include/js/paginator.js?v=2.4" type="text/javascript"></script>
+   <script src="include/js/old.js?v=2.4" type="text/javascript"></script>
+   <script src="include/js/old2.js?v=2.4" type="text/javascript"></script>
 
 
-   <!-- <script src="include/js/function.js?v=2.3" type="text/javascript"></script> -->
-   <!-- <script src="include/js/plannedpro_data.js?v=2.3" type="text/javascript"></script> -->
-   <!-- <link rel="stylesheet" href="../../include/bootstrap/bootstrap.min.css?v=2.3"> -->
+   <!-- <script src="include/js/function.js?v=2.4" type="text/javascript"></script> -->
+   <!-- <script src="include/js/plannedpro_data.js?v=2.4" type="text/javascript"></script> -->
+   <!-- <link rel="stylesheet" href="../../include/bootstrap/bootstrap.min.css?v=2.4"> -->
    <link href="../../include/css/bootstrap.min.css" rel="stylesheet" />
 
-   <!-- <link rel="stylesheet" href="include/css/bless.css?v=2.3"> -->
-   <link rel="stylesheet" href="include/css/old.css?v=2.3">
+   <!-- <link rel="stylesheet" href="include/css/bless.css?v=2.4"> -->
+   <link rel="stylesheet" href="include/css/old.css?v=2.4">
 
-   <script type="text/javascript" src="include/js/main.js?v=2.3"></script>
+   <script type="text/javascript" src="include/js/main.js?v=2.4"></script>
 
-   <!-- <script type="text/javascript" src="include/js/simditor.js?v=2.3"></script> -->
+   <!-- <script type="text/javascript" src="include/js/simditor.js?v=2.4"></script> -->
 
-   <link rel="stylesheet" type="text/css" href="include/css/simditor/simditor.css?v=2.3" />
+   <link rel="stylesheet" type="text/css" href="include/css/simditor/simditor.css?v=2.4" />
 
-   <!-- <script type="text/javascript" src="include/js/simditor/jquery.min.js?v=2.3"></script> -->
-   <script type="text/javascript" src="include/js/simditor/module.js?v=2.3"></script>
-   <script type="text/javascript" src="include/js/simditor/hotkeys.js?v=2.3"></script>
-   <script type="text/javascript" src="include/js/simditor/uploader.js?v=2.3"></script>
-   <script type="text/javascript" src="include/js/simditor/simditor.js?v=2.3"></script>
-   <script type="text/javascript" src="include/js/simditor/beautify-html.js?v=2.3"></script>
+   <!-- <script type="text/javascript" src="include/js/simditor/jquery.min.js?v=2.4"></script> -->
+   <script type="text/javascript" src="include/js/simditor/module.js?v=2.4"></script>
+   <script type="text/javascript" src="include/js/simditor/hotkeys.js?v=2.4"></script>
+   <script type="text/javascript" src="include/js/simditor/uploader.js?v=2.4"></script>
+   <script type="text/javascript" src="include/js/simditor/simditor.js?v=2.4"></script>
+   <script type="text/javascript" src="include/js/simditor/beautify-html.js?v=2.4"></script>
 
 
 <link rel="stylesheet" type="text/css" href="./include/css/dataTable_BTN.css" />
@@ -132,13 +132,13 @@ getDataSettingAllToSession();
 
 
 
-   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.4/beautify.js?v=2.3"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.4/beautify-css.js?v=2.3"></script> -->
-   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.4/beautify-html.js?v=2.3"></script> -->
+   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.4/beautify.js?v=2.4"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.4/beautify-css.js?v=2.4"></script> -->
+   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.4/beautify-html.js?v=2.4"></script> -->
 
-   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.4/beautify.min.js?v=2.3"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.4/beautify-css.min.js?v=2.3"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.4/beautify-html.min.js?v=2.3"></script> -->
+   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.4/beautify.min.js?v=2.4"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.4/beautify-css.min.js?v=2.4"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.4/beautify-html.min.js?v=2.4"></script> -->
       <link href="./include/css/daterangepicker.css" rel="stylesheet" />
     <script type="text/javascript" src="include/js/daterangepicker.min.js" ></script>
 
@@ -150,17 +150,17 @@ getDataSettingAllToSession();
     <script type="text/javascript" src="include/js/customFunctions.js" ></script>
 
 
-   <link rel="stylesheet" href="include/js/simditor/simditor-html.css?v=2.3">
-   <script type="text/javascript" src="include/js/simditor/simditor-html.js?v=2.3"></script>
+   <link rel="stylesheet" href="include/js/simditor/simditor-html.css?v=2.4">
+   <script type="text/javascript" src="include/js/simditor/simditor-html.js?v=2.4"></script>
 
    <script type="text/javascript" src="include/js/JsBarcode.code128.min.js"></script>
-   <script type="text/javascript" src="include/js/cleancare.js?v=2.3"></script>
-   <script type="text/javascript" src="include/js/custom.js?v=2.3"></script>
+   <script type="text/javascript" src="include/js/cleancare.js?v=2.4"></script>
+   <script type="text/javascript" src="include/js/custom.js?v=2.4"></script>
 
-   <script type="text/javascript" src="include/js/lib.js?v=2.3"></script>
+   <script type="text/javascript" src="include/js/lib.js?v=2.4"></script>
 
-   <link rel="stylesheet" href="include/css/custom.css?v=2.3">
-   <link rel="stylesheet" href="include/css/lib.css?v=2.3">
+   <link rel="stylesheet" href="include/css/custom.css?v=2.4">
+   <link rel="stylesheet" href="include/css/lib.css?v=2.4">
   
   <!-- <style type="text/css" media="print">
     .noPrint{
@@ -381,10 +381,10 @@ getDataSettingAllToSession();
 </body>
 
 
-<!-- <script type="text/javascript" src="../../include/js/jquery.Thailand.js?v=2/dependencies/zip.js?v=2/zip.js?v=2.3"></script>
-<script type="text/javascript" src="../../include/js/jquery.Thailand.js?v=2/dependencies/JQL.min.js?v=2.3"></script>
-<script type="text/javascript" src="../../include/js/jquery.Thailand.js?v=2/dependencies/typeahead.bundle.js?v=2.3"></script>
-<script type="text/javascript" src="../../include/js/jquery.Thailand.js?v=2/dist/jquery.Thailand.min.js?v=2.3"></script> -->
+<!-- <script type="text/javascript" src="../../include/js/jquery.Thailand.js?v=2/dependencies/zip.js?v=2/zip.js?v=2.4"></script>
+<script type="text/javascript" src="../../include/js/jquery.Thailand.js?v=2/dependencies/JQL.min.js?v=2.4"></script>
+<script type="text/javascript" src="../../include/js/jquery.Thailand.js?v=2/dependencies/typeahead.bundle.js?v=2.4"></script>
+<script type="text/javascript" src="../../include/js/jquery.Thailand.js?v=2/dist/jquery.Thailand.min.js?v=2.4"></script> -->
 <script type="text/javascript">
    $(window).ready(() => {
       //  startConsoleLog()

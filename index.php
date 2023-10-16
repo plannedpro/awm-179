@@ -13,14 +13,12 @@ $versionScript = 1;
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <?php $domain_ = $_SERVER['SERVER_NAME']; ?>
     <title>ระบบบันทึกข้อมูลการใช้บริการห้องสมุด โรงเรียนอนุบาลวังน้ำเย็นมิตรภาพที่ 179</title>
     <meta name="description"
         content="ระบบบันทึกข้อมูลการใช้บริการห้องสมุด โรงเรียนอนุบาลวังน้ำเย็นมิตรภาพที่ 179 โดย Plannedpro Creative Solutions" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-
-    <!-- facebook share -->
     <link rel="image_src" type="image/jpeg" href="https://<?=$domain_?>/facebbook1.png">
     <meta property="fb:app_id" content="">
     <meta property="fb:admins" content="">
